@@ -1,5 +1,8 @@
-DayZ-Mission-System--Epoch-Edition-
+DayZ-Mission-System-Epoch-Edition-
 ===================================
+
+Credits : Lazyink, TheSzerdi, Falcyn , TAW_Tonic, EPOCH DEV's
+
 
 [WIP for EPOCH] Merged Mission System from TheSzerdi and Lazyink 
 
