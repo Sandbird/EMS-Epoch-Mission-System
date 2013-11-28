@@ -1,4 +1,4 @@
-//Special weapons squad script Created by TheSzerdi Edited by Falcyn [QF]
+// Construction Mission Created by TheSzerdi Edited by MimiC
 
 private ["_coords","_dummymarker","_wait","_coord1","_coord2","_coord3","_coord4","_coord5","_coord6","_coord7","_coord8","_coord9","_coord10","_coord11","_coord12"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMajor.sqf";
@@ -20,16 +20,16 @@ _coord12 = [5266.6836,7273.8135,0];
 _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord8, _coord9, _coord10, _coord11, _coord12] call BIS_fnc_selectRandom;
 
 //Mission start
-[nil,nil,rTitleText,"A special weapons squad has arrived! Kill them for their weapons!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A special weapons squad has arrived! Kill them for their weapons!"] call RE;
-[nil,nil,rHINT,"A special weapons squad has arrived! Kill them for their weapons!"] call RE;
+[nil,nil,rTitleText,"Intel suggests bandits may be trying to build a base nearby, locate and terminate before they get fortified.", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Intel suggests bandits may be trying to build a base nearby, locate and terminate before they get fortified."] call RE;
+[nil,nil,rHINT,"Intel suggests bandits may be trying to build a base nearby, locate and terminate before they get fortified."] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
 [] execVM "debug\addmarkers.sqf";
 
 box = createVehicle ["USLaunchersBox",[(_coords select 0) - 3, (_coords select 1) - 3,0],[], 0, "NONE"];
-[BOX] execVM "\z\addons\dayz_server\missions\misc\fillLaunchBoxes.sqf";
+[BOX] execVM "\z\addons\dayz_server\missions\misc\fillConstructionMajor.sqf";
 
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
@@ -38,9 +38,9 @@ _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 waitUntil{{isPlayer _x && _x distance box < 20  } count playableunits > 0}; 
 
 //Mission accomplished
-[nil,nil,rTitleText,"The special weapons have been found, nice work, enjoy the spoils.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The special weapons have been found, nice work, enjoy the spoils."] call RE;
-[nil,nil,rHINT,"The special weapons have been found, nice work, enjoy the spoils."] call RE;
+[nil,nil,rTitleText,"Survivors have eliminated the bandit construction team.", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Survivors have eliminated the bandit construction team."] call RE;
+[nil,nil,rHINT,"Survivors have eliminated the bandit construction team."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
