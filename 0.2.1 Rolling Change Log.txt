@@ -1,8 +1,21 @@
-======================================
-=== Epoch Mission System Changelog ===
-======================================
+=======================================
+======== Epoch Mission System  ========
+====== Rolling Change Log: 0.2.1 ======
+=======================================
 
-Release version: 0.2.1
+Pending Release version: 0.2.1
 Release date: Soon...
 
 Version 0.2.1 is strictly a platform change and bug fix release. No new features have been added.
+This is the first release using the GitHub development platform.
+
+Development on this project is currently done by TheFuchs and MimiC.
+
+** Do not download and use these files on your server as they are a work in progress and will more than likely not work properly. Please download official releases only.
+
+
+[CHANGE] Organized loot tables for mission rewards
+[CHANGE] Reduced loot quantity on mission rewards
+
+
+[REMOVED] AK SD ammunition from loot tables
