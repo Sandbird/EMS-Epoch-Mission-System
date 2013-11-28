@@ -1,0 +1,8 @@
+======================================
+=== Epoch Mission System Changelog ===
+======================================
+
+Release version: 0.2.1
+Release date: Soon...
+
+Version 0.2.1 is strictly a platform change and bug fix release. No new features have been added.
