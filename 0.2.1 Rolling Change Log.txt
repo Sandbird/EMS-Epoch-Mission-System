@@ -14,8 +14,8 @@ Development on this project is currently done by TheFuchs and MimiC.
 ** Do not download and use these files on your server as they are a work in progress and will more than likely not work properly. Please download official releases only.
 
 
-[CHANGE] Organized loot tables for mission rewards
-[CHANGE] Reduced loot quantity on mission rewards
+* [UPDATED] Organized loot tables for mission rewards
+* [UPDATED] Reduced loot quantity on mission rewards
 
 
-[REMOVED] AK SD ammunition from loot tables
+* [REMOVED] AK SD ammunition from loot tables
