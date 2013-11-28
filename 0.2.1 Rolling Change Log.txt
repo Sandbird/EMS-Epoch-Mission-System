@@ -4,7 +4,7 @@
 =======================================
 
 Pending Release version: 0.2.1
-Release date: Soon...
+Release date: Soon...and when it's done^^
 
 Version 0.2.1 is strictly a platform change and bug fix release. No new features have been added.
 This is the first release using the GitHub development platform.
