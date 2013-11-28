@@ -20,9 +20,9 @@ _coord12 = [5266.6836,7273.8135,0];
 _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord8, _coord9, _coord10, _coord11, _coord12] call BIS_fnc_selectRandom;
 
 //Mission accomplished
-[nil,nil,rTitleText,"A firebase has been constructed! Secure it for yourself!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A firebase has been constructed! Secure it for yourself!"] call RE;
-[nil,nil,rHINT,"A firebase has been constructed! Secure it for yourself!"] call RE;
+[nil,nil,rTitleText,"A firebase is being constructed! Stop the bandits and secure the construction materials for yourself!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"A firebase is being constructed! Stop the bandits and secure the construction materials for yourself!"] call RE;
+[nil,nil,rHINT,"A firebase is being constructed! Stop the bandits and secure the construction materials for yourself!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -31,7 +31,7 @@ publicVariable "Ccoords";
 _base = ["land_fortified_nest_big","Land_Fort_Watchtower"] call BIS_fnc_selectRandom;
 baserunover = createVehicle [_base,[(_coords select 0) - 20, (_coords select 1) - 10,-0.2],[], 0, "NONE"];
 box = createVehicle ["USLaunchersBox",[(_coords select 0) + 2, (_coords select 1),0],[], 0, "NONE"];
-[BOX] execVM "\z\addons\dayz_server\missions\misc\fillLaunchBoxes.sqf";
+[BOX] execVM "\z\addons\dayz_server\missions\misc\fillConstructionMajor.sqf";
 
 _aispawn = [_coords,80,6,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
@@ -40,9 +40,9 @@ _aispawn = [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 waitUntil{{isPlayer _x && _x distance baserunover < 20  } count playableunits > 0}; 
 
 //Mission accomplished
-[nil,nil,rTitleText,"The base is yours. Excellent work, now keep it to yourself or let anyone use it.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The base is yours. Excellent work, now keep it to yourself or let anyone use it."] call RE;
-[nil,nil,rHINT,"The base is yours. Excellent work, now keep it to yourself or let anyone use it."] call RE;
+[nil,nil,rTitleText,"Survivors have secured the construction materials.", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Survivors have secured the construction materials."] call RE;
+[nil,nil,rHINT,"Survivors have secured the construction materials."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
