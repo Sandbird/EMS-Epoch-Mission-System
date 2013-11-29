@@ -22,14 +22,18 @@ Easy : 10-15 minutes
 ===========================================================================
 
 ## Installation Instructions
+### dayz_server PBO Instructions
 
-1. Download and unpack the most recent release of EMS from <a href="https://github.com/TheFuchs/Epoch-Mission-System--EMS-/releases">our GitHub Release Section</a>. Currently this is version 0.2.1
-2. Make a copy of your *dayz_server.pbo* and rename it *dayz_server.pbo.bak*
-3. Unpack your *dayz_server.pbo* to a folder called *dayz_server*
-4. Copy the *Missions* folder from the EMS download and paste it into the root of your unpacked *dayz_server*
+Download and unpack the most recent release of EMS from <a href="https://github.com/TheFuchs/Epoch-Mission-System--EMS-/releases">our GitHub Release Section</a>. Currently this is version 0.2.1
+
+Make a copy of your <b>dayz_server.pbo</b> and rename it <b>dayz_server.pbo.bak</b>
+
+Unpack your <b>dayz_server.pbo</b> to a folder called <b>dayz_server</b>
+
+Copy the <b>Missions</b> folder from the EMS download and paste it into the root of your unpacked <b>dayz_server</b>
 
 
-Edit your *server_functions.sqf*<br>Located: dayz_server\init\server_functions.sqf<br>
+<b>Edit your server_functions.sqf</b><br>Located: dayz_server\init\server_functions.sqf<br>
 
 <b>Around line 540 look for this:</b>
 	
@@ -56,7 +60,7 @@ Edit your *server_functions.sqf*<br>Located: dayz_server\init\server_functions.s
     //---------EndInitMissions------//
 
 	
-6. Edit <b>server_updateObject.sqf</b><br>Located: dayz_server\compile\server_updateObject.sqf
+<b>Edit server_updateObject.sqf</b><br>Located: dayz_server\compile\server_updateObject.sqf
 
 <b>Around line 22 look for this:</b>
 
@@ -71,7 +75,7 @@ Edit your *server_functions.sqf*<br>Located: dayz_server\init\server_functions.s
 
     if (_object getVariable "Mission" == 1) exitWith {};
 
-7. Edit <b>server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
+<b>Edit server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
 
 <b>Around line 298 look for this:</b>
 
@@ -81,5 +85,24 @@ Edit your *server_functions.sqf*<br>Located: dayz_server\init\server_functions.s
 
     if(vehicle _x != _x && (vehicle _x getVariable [""Mission"",0] != 1) && (vehicle _x getVariable [""Sarge"",0] != 1) && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
 
-<b>Repack your dayz_server.pbo</b>
+<b>Repack your dayz_server.pbo and replace your original one.</b>
 
+=========================
+
+### Mission PBO Instructions
+
+Unpack your mission PBO file using PBO Manager into a folder
+
+Copy the <b>debug</b> folder from the EMS download to the root of your mission folder
+
+<b>Edit your init.sqf file</b>
+
+At the very end of you <b>init.sqf</b> file paste the following block of code:
+
+    // Mission System Markers
+    [] execVM "debug\addmarkers.sqf";
+    [] execVM "debug\addmarkers75.sqf";
+
+This will make the mission markers show up on the map for players that have died and respawn, or connect to the server after a mission has already spawned.
+
+<b>Repack your mission PBO using PBO Manager and replace your existing _mission_.pbo file</b>
