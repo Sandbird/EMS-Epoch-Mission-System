@@ -15,9 +15,10 @@ Modified and released by TheFuchs & MimiC with permission from Lazyink & TheSzer
 
 Easy : 10-15 minutes
 
-* Some knowledge of file locations
+* Some knowledge of Epoch Server & Mission file locations
 * How to use PBO manager to unpack and pack PBO files
 
 ===========================================================================
 
 ## Installation Instructions
+
