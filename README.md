@@ -22,3 +22,8 @@ Easy : 10-15 minutes
 
 ## Installation Instructions
 
+1. Download and unpack the most recent release of EMS from <a href="https://github.com/TheFuchs/Epoch-Mission-System--EMS-/releases">our GitHub Release Section</a>. Currently this is version 0.2.1
+2. Make a copy of your *dayz_server.pbo* and rename it *dayz_server.pbo.bak*
+3. Unpack your *dayz_server.pbo* to a folder called *dayz_server*
+4. Copy the *Missions* folder from the EMS download and paste it into the root of your unpacked *dayz_server*
+5. Edit your *server_functions.sqf*
