@@ -8,16 +8,16 @@ Modified and released by TheFuchs & MimiC with permission from Lazyink & TheSzer
 
 **Requirements:**
 
-- Notepad++
-- PBO Manager
+* Notepad++
+* PBO Manager
 
 **Difficulty**
 
 Easy : 10-15 minutes
 
-- Some knowledge of file locations
-- How to use PBO manager to unpack and pack PBO files
+* Some knowledge of file locations
+* How to use PBO manager to unpack and pack PBO files
 
 ===========================================================================
 
-[Installation Instructions](http://www.pwndhost.com/?page_id=171 "EMS Installation Instructions")
+## Installation Instructions
