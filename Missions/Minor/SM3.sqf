@@ -29,7 +29,7 @@ _baserunover3 setVariable ["Sarge",1,true];
 _hummer setVariable ["Sarge",1,true];
 _hummer1 setVariable ["Sarge",1,true];
 _hummer2 setVariable ["Sarge",1,true];
-_hummer3 setVariable ["MSarge",1,true];
+_hummer3 setVariable ["Sarge",1,true];
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 3, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxes.sqf";
