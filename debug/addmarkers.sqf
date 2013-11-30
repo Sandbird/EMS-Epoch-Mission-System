@@ -15,6 +15,7 @@ if (MissionStarted] then
     MainMarker setMarkerColor "ColorBlue";
     MainMarker setMarkerShape "ELLIPSE";
     MainMarker setMarkerBrush "Solid";
+    MainMarker setMarkerAlpha 0.6; // in the fact what does this command?
     MainMarker setMarkerText "Mission" //i read that this wont be needed but we have to test it!
     Mainmarker setmarkerSize [175,175];
 
