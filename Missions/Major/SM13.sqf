@@ -31,9 +31,13 @@ publicVariable "Ccoords";
 box = createVehicle ["USLaunchersBox",[(_coords select 0) - 3, (_coords select 1) - 3,0],[], 0, "NONE"];
 [BOX] execVM "\z\addons\dayz_server\missions\misc\fillConstructionMajor.sqf";
 
-_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+_aispawn = [(_coords select 0),40,6,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
-_aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+_aispawn = [(_coords select 0) + 50,90,6,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+sleep 5;
+_aispawn = [(_coords select 0) + 100,120,8,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server6.sqf";//AI Guards
+sleep 5;
+_aispawn = [(_coords select 0) + 150,170,10,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server6.sqf";//AI Guards
 
 waitUntil{{isPlayer _x && _x distance box < 20  } count playableunits > 0}; 
 
