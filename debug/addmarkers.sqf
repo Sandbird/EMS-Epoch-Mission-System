@@ -1,23 +1,8 @@
+// Major mission marker
+
 	_MainMarker = createMarker ["MainMarker", Ccoords];
-	_MainMarker setMarkerColor "ColorRed";
-	_MainMarker setMarkerShape "ELLIPSE";
-	_MainMarker setMarkerBrush "Solid";
-	_MainMarker setMarkerAlpha 0.6;
-	_MainMarker setMarkerText "Mission";
-	_MainMarker setMarkerSize [175,175];
-
-
-
-/*test for next mission release
-
-if (MissionStarted] then or
-while {MissionGoMinor == 1} do {   from hillbilly sqf
-{   MainMarker = createmarker ["MainMarker", Ccoords];
-    MainMarker setMarkerColor "ColorBlue";
-    MainMarker setMarkerShape "ELLIPSE";
-    MainMarker setMarkerBrush "Solid";
-    MainMarker setMarkerAlpha 0.6; // in the fact what does this command?
-    MainMarker setMarkerText "Mission" //i read that this wont be needed but we have to test it!
-    Mainmarker setmarkerSize [175,175];
-
-*/    
+	_MainMarker setMarkerColor "ColorRed";	//Set the color of the marker
+	_MainMarker setMarkerShape "ELLIPSE";	//Set the shape of the marker
+	_MainMarker setMarkerBrush "Solid";	//Set the style of the marker
+	_MainMarker setMarkerAlpha 0.75;	//Set the transparency of the marker
+	_MainMarker setMarkerSize [250,250];	//Set the size of the marker
