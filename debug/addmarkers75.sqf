@@ -1,4 +1,3 @@
-//Created by Falcyn [QF]
 	_MainMarker75 = createMarker["MainMarker75", MCoords];
 	_MainMarker75 setMarkerColor "ColorOrange";
 	_MainMarker75 setMarkerShape "ELLIPSE";
