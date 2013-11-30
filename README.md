@@ -40,6 +40,14 @@ Copy the <b>Missions</b> folder from the EMS download and paste it into the root
 
 <b>Edit your server_functions.sqf</b><br>Located: dayz_server\init\server_functions.sqf<br>
 
+<b>Around line 30 look for this:</b>
+
+    server_deaths = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
+
+<b>Add this after it:</b>
+
+    fnc_hTime = compile preprocessFile "\z\addons\dayz_server\Missions\misc\fnc_hTime.sqf"; //Random integer selector for mission wait time
+
 <b>Around line 540 look for this:</b>
 	
 
