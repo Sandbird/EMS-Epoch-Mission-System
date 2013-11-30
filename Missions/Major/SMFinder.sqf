@@ -15,4 +15,5 @@ _element = SMarray select _num;
 _Earray = [_element];
 };
 
-[] execVM format ["\z\addons\dayz_server\missions\major\%1.sqf",_element];
+//[] execVM format ["\z\addons\dayz_server\missions\major\%1.sqf",_element];
+[] execVM format ["\z\addons\dayz_server\missions\major\13.sqf",_element];
