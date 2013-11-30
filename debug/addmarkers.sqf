@@ -10,7 +10,8 @@
 
 /*test for next mission release
 
-if (MissionStarted] then
+if (MissionStarted] then or
+while {MissionGoMinor == 1} do {   from hillbilly sqf
 {   MainMarker = createmarker ["MainMarker", Ccoords];
     MainMarker setMarkerColor "ColorBlue";
     MainMarker setMarkerShape "ELLIPSE";
