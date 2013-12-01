@@ -56,8 +56,8 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 5  } count playableunits > 
 
 //Mission accomplished
 [nil,nil,rTitleText,"The Medical Outpost is under survivor control!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The hunting party has been wiped out!"] call RE;
-[nil,nil,rHINT,"The hunting party has been wiped out!"] call RE;
+[nil,nil,rGlobalRadio,"The Medical Outpost is under survivor control!"] call RE;
+[nil,nil,rHINT,"The Medical Outpost is under survivor control!"] call RE;
 
 
 [] execVM "debug\remmarkers75.sqf";
