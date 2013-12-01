@@ -1,4 +1,4 @@
-//Created by TAW_Tonic Edited by TheSzerdi
+//Created by TAW_Tonic Edited by TheSzerdi and Fuchs
 _crate = _this select 0;
 
 clearWeaponCargoGlobal _crate;
