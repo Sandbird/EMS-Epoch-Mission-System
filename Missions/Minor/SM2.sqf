@@ -1,4 +1,5 @@
 //Medical Outpost by lazyink (Full credit for code to TheSzerdi & TAW_Tonic)
+edited by Fuchs
 
 private ["_coords","_wait","_MainMarker75"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMinor.sqf";
