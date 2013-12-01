@@ -42,7 +42,7 @@ _aispawn = [[(_coords select 0) + 20, _coords select 1,0],40,4,4,1] execVM "\z\a
 sleep 5;
 _aispawn = [[(_coords select 0) + 30, _coords select 1,0],40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance _c130wreck < 5 } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _c130wreck < 25 } count playableunits > 0}; 
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
