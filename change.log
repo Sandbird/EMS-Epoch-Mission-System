@@ -3,19 +3,20 @@
 ====== Rolling Change Log: 0.2.1 ======
 =======================================
 
-Pending Release version: 0.2.1
-Release date: Soon...and when it's done^^
+Release version: 0.2.1
+Release date: Dec 1, 2013
 
+Notes: 
 Version 0.2.1 is strictly a platform change and bug fix release. No new features have been added.
 This is the first release using the GitHub development platform.
 
 Development on this project is currently done by TheFuchs and MimiC.
 
-** Do not download and use these files on your server as they are a work in progress and will more than likely not work properly. Please download official releases only.
-
+* [FIXED] Mission markers
+* [FIXED] Completion text in mission Minor\SM2.sqf was not correct
+* [FIXED] Minor\SM8.sqf mission would spawn AI out in the water
 * [UPDATED] Changed Major\SM9.sqf and Major\SM13.sqf to construction missions with high value construction loot as the reward
 * [UPDATED] Organized loot tables for mission rewards
 * [UPDATED] Reduced loot quantity on mission rewards
-
-
 * [REMOVED] AK SD ammunition from loot tables
+* [ADDED] New suggested SargeAI configs
