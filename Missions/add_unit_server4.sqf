@@ -27,10 +27,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["M1014","8Rnd_B_Beneli_74Slug","revolver_EP1","6Rnd_45ACP"]};
-                  case 1: {["M1014","8Rnd_B_Beneli_Pellets","revolver_EP1","6Rnd_45ACP"]};
-                  case 2: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Colt1911","7Rnd_45ACP_1911"]};
-                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_Pellets","Colt1911","7Rnd_45ACP_1911"]};
+                  case 0: {["M1014","8Rnd_B_Beneli_74Slug"]};
+                  case 1: {["M1014","8Rnd_B_Beneli_Pellets"]};
+                  case 2: {["Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_Pellets"]};
                 };
             };
             if ((x == 2) || (x == 4) || (x >= 6)) then //troops snipers
@@ -40,9 +40,9 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["LeeEnfield","10x_303","Makarov","8Rnd_9x18_Makarov"]};
-                  case 1: {["Huntingrifle","5x_22_LR_17_HMR","Makarov","8Rnd_9x18_Makarov"]};
-                  case 2: {["M14_EP1","20Rnd_762x51_DMR","Makarov","8Rnd_9x18_Makarov"]};
+                  case 0: {["LeeEnfield","10x_303"]};
+                  case 1: {["Huntingrifle","5x_22_LR_17_HMR"]};
+                  case 2: {["M14_EP1","20Rnd_762x51_DMR"]};
                 };
             };
         };
@@ -55,13 +55,13 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["AK_47_M","30Rnd_762x39_AK47","MakarovSD_DZ","8Rnd_9x18_Makarov"]};
-                  case 1: {["AK_47_S","30Rnd_762x39_AK47","M9SD","15Rnd_9x19_M9SD"]};
-                  case 2: {["Sa58P_EP1","30Rnd_762x39_SA58","MakarovSD_DZ","8Rnd_9x18_Makarov"]};
-                  case 3: {["Sa58V_CCO_EP1","30Rnd_762x39_SA58","M9SD","15Rnd_9x19_M9SD"]};
-                  case 4: {["Sa58V_EP1","30Rnd_762x39_SA58","MakarovSD_DZ","8Rnd_9x18_Makarov"]};
-                  case 5: {["FN_FAL","20Rnd_762x51_FNFAL","M9SD","15Rnd_9x19_M9SD"]};
-                  case 6: {["FN_FAL_ANPVS4","20Rnd_762x51_FNFAL","MakarovSD_DZ","8Rnd_9x18_Makarov"]};
+                  case 0: {["AK_47_M","30Rnd_762x39_AK47"]};
+                  case 1: {["AK_47_S","30Rnd_762x39_AK47"]};
+                  case 2: {["Sa58P_EP1","30Rnd_762x39_SA58"]};
+                  case 3: {["Sa58V_CCO_EP1","30Rnd_762x39_SA58"]};
+                  case 4: {["Sa58V_EP1","30Rnd_762x39_SA58"]};
+                  case 5: {["FN_FAL","20Rnd_762x51_FNFAL"]};
+                  case 6: {["FN_FAL_ANPVS4","20Rnd_762x51_FNFAL"]};
                 };
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
@@ -71,9 +71,9 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["M249_DZ","200Rnd_556x45_M249","glock17_EP1","17Rnd_9x19_glock17"]};
-                  case 1: {["MG36_DZ","100Rnd_556x45_BetaCMag","Colt1911","7Rnd_45ACP_1911"]};
-                  case 2: {["RPK_74_DZ","75Rnd_545x39_RPK","M9","15Rnd_9x19_M9"]};
+                  case 0: {["M249_DZ","200Rnd_556x45_M249"]};
+                  case 1: {["MG36_DZ","100Rnd_556x45_BetaCMag"]};
+                  case 2: {["RPK_74_DZ","75Rnd_545x39_RPK"]};
                 };
             };
             if (x > 3) then //troops soldiers
@@ -84,10 +84,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1","20Rnd_B_765x17_Ball"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
+                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
                 };
             };
         };
