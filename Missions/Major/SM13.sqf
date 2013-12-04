@@ -38,7 +38,7 @@ _aispawn = [_coords,60,4,6,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 sleep 2;
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance box < 20  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0}; 
 
 //Mission accomplished
 [nil,nil,rTitleText,"Survivors have eliminated the bandit construction team.", "PLAIN",6] call RE;
