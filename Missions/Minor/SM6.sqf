@@ -42,7 +42,7 @@ sleep 1;
 
 
 
-waitUntil{{isPlayer _x && _x distance _uralcrash < 5  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _uralcrash < 30  } count playableunits > 0}; 
 
 //Mission accomplished
 [nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
