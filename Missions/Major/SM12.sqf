@@ -41,17 +41,17 @@ sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 
 
-waitUntil{{isPlayer _x && _x distance hueychop < 20  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0}; 
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";
 
-//Mission accomplished
-[nil,nil,rTitleText,"Good work you've secured the APC!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Good work you've secured the APC!"] call RE;
-[nil,nil,rHINT,"Good work you've secured the APC!"] call RE;
+//Mission completed
+[nil,nil,rTitleText,"APC secured by survivors!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"APC secured by survivors!"] call RE;
+[nil,nil,rHINT,"APC secured by survivors!"] call RE;
 
 SM1 = 5;
 [0] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf";
