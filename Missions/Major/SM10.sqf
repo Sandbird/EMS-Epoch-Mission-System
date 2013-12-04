@@ -41,12 +41,12 @@ _aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance hueychop < 20  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0}; 
 
-//Mission accomplished
-[nil,nil,rTitleText,"Good work you've secured the helicopter!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Good work you've secured the helicopter!"] call RE;
-[nil,nil,rHINT,"Good work you've secured the helicopter!"] call RE;
+//Mission completed
+[nil,nil,rTitleText,"The Helicopter is under survivor control!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"The Helicopter is under survivor control!"] call RE;
+[nil,nil,rHINT,"The Helicopter is under survivor control!"] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
