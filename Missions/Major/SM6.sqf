@@ -36,7 +36,7 @@ _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance _hummer < 10  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _hummer < 30  } count playableunits > 0}; 
 
 //Mission accomplished
 [nil,nil,rTitleText,"The medical crate is under survivor control!", "PLAIN",6] call RE;
