@@ -37,9 +37,9 @@ sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 sleep 5;
 
-waitUntil{{isPlayer _x && _x distance _hummer < 10  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _hummer < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The weapons cache is under survivor control!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The weapons cache is under survivor control!"] call RE;
 [nil,nil,rHINT,"The weapons cache is under survivor control!"] call RE;
