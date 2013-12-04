@@ -52,15 +52,15 @@ if (isDedicated) then {
 
 _checking = 1;
 while {_checking == 1} do {
-_people =  nearestObjects [_coords,["Man"],20];
+_people =  nearestObjects [_coords,["Man"],30];
 if ({isPlayer _x} count _people > 0) then {_checking = 0};
 sleep 1;
 };
 
 //Mission accomplished
-[nil,nil,rTitleText,"Good work you've secured the crash site!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Good work you've secured the crash site!"] call RE;
-[nil,nil,rHINT,"Good work you've secured the crash site!"] call RE;
+[nil,nil,rTitleText,"Crashed Truck secured by survivors!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Crashed Truck secured by survivors!"] call RE;
+[nil,nil,rHINT,"Crashed Truck secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
