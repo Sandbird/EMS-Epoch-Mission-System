@@ -30,10 +30,10 @@ sleep 1;
 
 waitUntil{{isPlayer _x && _x distance _chopcrash < 5  } count playableunits > 0}; 
 
-//Mission accomplished
-[nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The crash site has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"The crash site has been secured by survivors!"] call RE;
+//Mission completed
+[nil,nil,rTitleText,"Wrecked Chopper has been secured by survivors!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Wrecked Chopper has been secured by survivors!"] call RE;
+[nil,nil,rHINT,"Wrecked Chopper has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
