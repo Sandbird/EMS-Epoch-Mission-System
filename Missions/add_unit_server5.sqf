@@ -31,10 +31,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["M1014","8Rnd_B_Beneli_74Slug","revolver_EP1","6Rnd_45ACP"]};
-                  case 1: {["M1014","8Rnd_B_Beneli_Pellets","revolver_EP1","6Rnd_45ACP"]};
-                  case 2: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Colt1911","7Rnd_45ACP_1911"]};
-                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_Pellets","Colt1911","7Rnd_45ACP_1911"]};
+                  case 0: {["M1014","8Rnd_B_Beneli_74Slug"]};
+                  case 1: {["M1014","8Rnd_B_Beneli_Pellets"]};
+                  case 2: {["Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_Pellets"]};
                 };
             };
             if ((x == 2) || (x == 4) || (x >= 6)) then //troops snipers
@@ -44,9 +44,9 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["LeeEnfield","10x_303","Makarov","8Rnd_9x18_Makarov"]};
-                  case 1: {["Huntingrifle","5x_22_LR_17_HMR","Makarov","8Rnd_9x18_Makarov"]};
-                  case 2: {["M14_EP1","20Rnd_762x51_DMR","Makarov","8Rnd_9x18_Makarov"]};
+                  case 0: {["LeeEnfield","10x_303"]};
+                  case 1: {["Huntingrifle","5x_22_LR_17_HMR"]};
+                  case 2: {["M14_EP1","20Rnd_762x51_DMR"]};
                 };
             };
         };
@@ -60,10 +60,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1","20Rnd_B_765x17_Ball"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
+                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
                 };
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
@@ -74,10 +74,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1","20Rnd_B_765x17_Ball"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
+                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1""]};
+                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
                 };
             };
             if (x > 3) then //troops soldiers
@@ -88,10 +88,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1","20Rnd_B_765x17_Ball"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
+                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
+                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
                 };
             };
         };
@@ -100,7 +100,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
                 "Bandit1_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
-                _ailoadout= ["MeleeHatchet","5Rnd_762x51_M24","Makarov","20Rnd_B_765x17_Ball"]
+                _ailoadout= ["MeleeHatchet","5Rnd_762x51_M24"]
             };
         };
         diag_log format ["AIUNIT: Creating Ins_Soldier_1 by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
