@@ -39,17 +39,17 @@ _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 sleep 5;
 _aispawn = [_coords,40,4,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance hueychop < 20  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0}; 
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";
 
-//Mission accomplished
-[nil,nil,rTitleText,"Good work you've secured the humvee!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Good work you've secured the humvee!"] call RE;
-[nil,nil,rHINT,"Good work you've secured the humvee!"] call RE;
+//Mission completed
+[nil,nil,rTitleText,"The humvee is under survivor control!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"The humvee is under survivor control!"] call RE;
+[nil,nil,rHINT,"The humvee is under survivor control!"] call RE;
 
 SM1 = 5;
 [0] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf";
