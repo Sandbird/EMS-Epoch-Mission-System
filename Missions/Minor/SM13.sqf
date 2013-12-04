@@ -17,7 +17,7 @@ publicVariable "MCoords";
 
 [_coords,80,4,1,2] execVM "\z\addons\dayz_server\Missions\add_unit_server5.sqf";//AI Guards
 sleep 1;
-waitUntil{({alive _x} count (units AxeMurderer)) < 1};
+waitUntil{({alive _x} count (units AxeMurderer)) < 10};
 
 //Mission completed
 [nil,nil,rTitleText,"Finally! He died! Check the body for medical supplies!", "PLAIN",6] call RE;
