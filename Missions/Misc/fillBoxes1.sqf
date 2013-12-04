@@ -85,7 +85,7 @@ _crate addMagazineCargoGlobal ["ItemMorphine", 4];
 _crate addMagazineCargoGlobal ["ItemPainkiller", 4];
 _crate addMagazineCargoGlobal ["ItemWaterbottle", 4];
 _crate addWeaponCargoGlobal ["ItemKnife", 1];
-_crate addWeaponCargoGlobal ["ItemToolbox_DZE", 1];
+_crate addWeaponCargoGlobal ["ItemToolbox", 1];
 _crate addWeaponCargoGlobal ["ItemMatchbox_DZE", 1];
 _crate addMagazineCargoGlobal ["ItemBloodbag", 4];
 _crate addWeaponCargoGlobal ["Binocular_Vector", 1];
