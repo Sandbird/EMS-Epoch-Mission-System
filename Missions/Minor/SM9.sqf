@@ -56,12 +56,12 @@ if (isDedicated) then {
 
 [] execVM "debug\hillbilly.sqf";
 
-waitUntil{{isPlayer _x && _x distance baserunover < 20  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance baserunover < 30  } count playableunits > 0}; 
 
-//Mission accomplished
-[nil,nil,rTitleText,"You survived the rape attempt! Loot their corpses!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"You survived the rape attempt! Loot their corpses!"] call RE;
-[nil,nil,rHINT,"You survived the rape attempt! Loot their corpses!"] call RE;
+//Mission completed
+[nil,nil,rTitleText,"Survivors killed all Hillies! Loot their corpses!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Survivors killed all Hillies! Loot their corpses!"] call RE;
+[nil,nil,rHINT,"Survivors killed all Hillies! Loot their corpses!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
