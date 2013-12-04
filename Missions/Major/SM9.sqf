@@ -44,7 +44,7 @@ _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 
 waitUntil{{isPlayer _x && _x distance baserunover < 20  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"Survivors have secured the construction materials.", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Survivors have secured the construction materials."] call RE;
 [nil,nil,rHINT,"Survivors have secured the construction materials."] call RE;
