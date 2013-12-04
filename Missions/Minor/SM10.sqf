@@ -58,10 +58,10 @@ if ({isPlayer _x} count _people > 0) then {_checking = 0};
 sleep 1;
 };
 
-//Mission accomplished
-[nil,nil,rTitleText,"Good work you've secured the crash site!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Good work you've secured the crash site!"] call RE;
-[nil,nil,rHINT,"Good work you've secured the crash site!"] call RE;
+//Mission complete
+[nil,nil,rTitleText,"Crash site has been secured by survivors!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Crash site has been secured by survivors!"] call RE;
+[nil,nil,rHINT,"Crash site has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
