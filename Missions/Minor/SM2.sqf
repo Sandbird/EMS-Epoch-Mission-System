@@ -53,9 +53,9 @@ sleep 3;
 sleep 3;
 
 
-waitUntil{{isPlayer _x && _x distance _baserunover < 5  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The Medical Outpost is under survivor control!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The Medical Outpost is under survivor control!"] call RE;
 [nil,nil,rHINT,"The Medical Outpost is under survivor control!"] call RE;
