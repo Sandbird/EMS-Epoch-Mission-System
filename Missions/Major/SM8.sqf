@@ -53,7 +53,7 @@ MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"Survivors secured the crash site! We'll done.", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Survivors secured the crash site! We'll done."] call RE;
 [nil,nil,rHINT,"Survivors secured the crash site! We'll done."] call RE;
