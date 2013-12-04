@@ -57,7 +57,7 @@ if ({isPlayer _x} count _people > 0) then {_checking = 0};
 sleep 1;
 };
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"Crashed Truck secured by survivors!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Crashed Truck secured by survivors!"] call RE;
 [nil,nil,rHINT,"Crashed Truck secured by survivors!"] call RE;
