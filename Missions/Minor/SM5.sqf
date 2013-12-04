@@ -28,9 +28,9 @@ sleep 1;
 [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 sleep 1;
 
-waitUntil{{isPlayer _x && _x distance _humveecrash < 5  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _humveecrash < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The crash site has been secured by survivors!"] call RE;
 [nil,nil,rHINT,"The crash site has been secured by survivors!"] call RE;
