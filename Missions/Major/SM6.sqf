@@ -38,7 +38,7 @@ _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 
 waitUntil{{isPlayer _x && _x distance _hummer < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The medical crate is under survivor control!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The medical crate is under survivor control!"] call RE;
 [nil,nil,rHINT,"The medical crate is under survivor control!"] call RE;
