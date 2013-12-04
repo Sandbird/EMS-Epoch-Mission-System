@@ -74,12 +74,7 @@ _crate addMagazineCargoGlobal ["30Rnd_9x19_MP5SD", 8];
 _crate addMagazineCargoGlobal ["30Rnd_9x19_UZI", 8];
 _crate addMagazineCargoGlobal ["100Rnd_762x54_PK", 32];
 _crate addMagazineCargoGlobal ["75Rnd_545x39_RPK", 8];
-_crate addMagazineCargoGlobal ["8Rnd_B_Saiga12_74Slug", 8];
-_crate addMagazineCargoGlobal ["8Rnd_B_Saiga12_Pellets", 8];
 _crate addMagazineCargoGlobal ["10Rnd_762x54_SVD", 8];
-_crate addMagazineCargoGlobal ["10Rnd_9x39_SP5_VSS", 8];
-_crate addMagazineCargoGlobal ["20Rnd_9x39_SP5_VSS", 8];
-
 // ITEMS
 _crate addWeaponCargoGlobal ["ItemCompass", 1];
 _crate addWeaponCargoGlobal ["ItemGPS", 1];
@@ -90,8 +85,8 @@ _crate addMagazineCargoGlobal ["ItemMorphine", 4];
 _crate addMagazineCargoGlobal ["ItemPainkiller", 4];
 _crate addMagazineCargoGlobal ["ItemWaterbottle", 4];
 _crate addWeaponCargoGlobal ["ItemKnife", 1];
-_crate addWeaponCargoGlobal ["ItemToolbox", 1];
-_crate addWeaponCargoGlobal ["ItemMatchbox", 1];
+_crate addWeaponCargoGlobal ["ItemToolbox_DZE", 1];
+_crate addWeaponCargoGlobal ["ItemMatchbox_DZE", 1];
 _crate addMagazineCargoGlobal ["ItemBloodbag", 4];
 _crate addWeaponCargoGlobal ["Binocular_Vector", 1];
 _crate addWeaponCargoGlobal ["NVGoggles", 1];
