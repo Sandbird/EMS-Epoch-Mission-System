@@ -7,9 +7,9 @@ WaitUntil {MissionGoMinor == 1};
 _coords = [getMarkerPos "center",0,7000,2,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission start
-[nil,nil,rTitleText,"A sniper team has been spotted!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A sniper team has been spotted!"] call RE;
-[nil,nil,rHINT,"A sniper team has been spotted!"] call RE;
+[nil,nil,rTitleText,"A sniper team has been spotted!Kill'em all", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"A sniper team has been spotted!Kill'em all"] call RE;
+[nil,nil,rHINT,"A sniper team has been spotted!Kill'em all"] call RE;
 
 
 MCoords = _coords;
@@ -20,10 +20,10 @@ publicVariable "MCoords";
 sleep 1;
 waitUntil{({alive _x} count (units SniperTeam)) < 1};
 
-//Mission accomplished
-[nil,nil,rTitleText,"You've killed the snipers! Now loot the corpses!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"You've killed the snipers! Now loot the corpses!"] call RE;
-[nil,nil,rHINT,"You've killed the snipers! Now loot the corpses!"] call RE;
+//Mission completed
+[nil,nil,rTitleText,"Snipers killed by survivors! Now loot the corpses!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Snipers killed by survivors! Now loot the corpses!"] call RE;
+[nil,nil,rHINT,"Snipers killed by survivors! Now loot the corpses!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
