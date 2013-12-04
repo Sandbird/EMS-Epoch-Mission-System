@@ -38,9 +38,9 @@ _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance box < 20  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The gear cache has been found, nice work, enjoy the spoils.", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The gear cache has been found, nice work, enjoy the spoils."] call RE;
 [nil,nil,rHINT,"The gear cache has been found, nice work, enjoy the spoils."] call RE;
