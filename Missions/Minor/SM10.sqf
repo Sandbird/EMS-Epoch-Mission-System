@@ -59,9 +59,9 @@ sleep 1;
 };
 
 //Mission complete
-[nil,nil,rTitleText,"Crash site has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Crash site has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"Crash site has been secured by survivors!"] call RE;
+[nil,nil,rTitleText,"Wrecked Chopper has been secured by survivors!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Wrecked Chopper has been secured by survivors!"] call RE;
+[nil,nil,rHINT,"Wrecked Chopper has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
