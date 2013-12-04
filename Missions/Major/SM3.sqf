@@ -40,9 +40,9 @@ sleep 5;
 _aispawn = [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 
 
-waitUntil{{isPlayer _x && _x distance _baserunover < 10  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"Survivors have taken control of the camp and medical supplies.", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Survivors have taken control of the camp and medical supplies."] call RE;
 [nil,nil,rHINT,"Survivors have taken control of the camp and medical supplies."] call RE;
