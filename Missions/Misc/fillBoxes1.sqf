@@ -6,14 +6,9 @@ clearMagazineCargoGlobal _crate;
 
 // RIFLES
 _crate addWeaponCargoGlobal ["AK_74_GL", 1];
-_crate addWeaponCargoGlobal ["AKS_74_UN_kobra_DZE", 1];
-_crate addWeaponCargoGlobal ["AKS_GOLD_DZN", 1];
-_crate addWeaponCargoGlobal ["AK_107_GL_pso_DZE", 1];
 _crate addWeaponCargoGlobal ["bizon_silenced", 1];
-_crate addWeaponCargoGlobal ["G36_C_SD_eotech_DZE", 1];
 _crate addWeaponCargoGlobal ["G36K_camo", 1];
 _crate addWeaponCargoGlobal ["G36A_camo", 1];
-_crate addWeaponCargoGlobal ["BAF_L85A2_UGL_ACOG_DZE", 1];
 _crate addWeaponCargoGlobal ["DMR", 1];
 _crate addWeaponCargoGlobal ["M14_EP1", 1];
 _crate addWeaponCargoGlobal ["M16A2", 1];
@@ -34,20 +29,15 @@ _crate addWeaponCargoGlobal ["MG36_DZN", 1];
 _crate addWeaponCargoGlobal ["Mk_48_DZ", 1];
 _crate addWeaponCargoGlobal ["MP5A5", 1];
 _crate addWeaponCargoGlobal ["MP5SD", 1];
-_crate addWeaponCargoGlobal ["Pecheneg_DZE", 1];
-_crate addWeaponCargoGlobal ["RPK_74_DZN", 1];
 _crate addWeaponCargoGlobal ["Sa58V_RCO_EP1", 1];
-_crate addWeaponCargoGlobal ["Saiga12K_DZE", 1];
 _crate addWeaponCargoGlobal ["SCAR_H_CQC_CCO", 1];
 _crate addWeaponCargoGlobal ["SCAR_H_LNG_Sniper", 1];
 _crate addWeaponCargoGlobal ["SCAR_H_LNG_Sniper_SD", 1];
 _crate addWeaponCargoGlobal ["SVD_CAMO", 1];
-_crate addWeaponCargoGlobal ["VSS_vintorez_DZE", 1];
 
 // PISTOLS
 _crate addWeaponCargoGlobal ["M9", 1];
 _crate addWeaponCargoGlobal ["M9SD", 1];
-_crate addWeaponCargoGlobal ["MakarovSD_DZE", 1];
 
 // AMMUNITION
 _crate addMagazineCargoGlobal ["15Rnd_9x19_M9", 8];
