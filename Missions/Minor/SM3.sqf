@@ -42,7 +42,7 @@ sleep 3;
 sleep 3;
 
 
-waitUntil{{isPlayer _x && _x distance _baserunover < 10  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
 
 //Mission accomplished
 [nil,nil,rTitleText,"The stash house is under survivor control!", "PLAIN",6] call RE;
