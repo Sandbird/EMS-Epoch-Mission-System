@@ -39,7 +39,7 @@ _aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance _hueychop < 10  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _hueychop < 30  } count playableunits > 0}; 
 
 //Mission accomplished
 [nil,nil,rTitleText,"The helicopter has been taken by survivors!", "PLAIN",6] call RE;
