@@ -53,7 +53,7 @@ if (isDedicated) then {
 
 _checking = 1;
 while {_checking == 1} do {
-_people =  nearestObjects [_coords,["Man"],20];
+_people =  nearestObjects [_coords,["Man"],30];
 if ({isPlayer _x} count _people > 0) then {_checking = 0};
 sleep 1;
 };
