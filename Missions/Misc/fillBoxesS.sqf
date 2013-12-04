@@ -24,7 +24,7 @@ _crate2 addMagazineCargoGlobal ["10Rnd_762x54_SVD", 10];
 
 // ITEMS
 _crate2 addWeaponCargoGlobal ["ItemToolbox", 5];
-_crate2 addWeaponCargoGlobal ["ItemMatchbox", 5];
+_crate2 addWeaponCargoGlobal ["ItemMatchbox_DZE", 5];
 
 // BACKPACKS
 _crate2 addBackpackCargoGlobal ['DZ_Backpack_EP1', 1];
