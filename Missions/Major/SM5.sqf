@@ -39,7 +39,7 @@ sleep 5;
 
 waitUntil{{isPlayer _x && _x distance _uralcrash < 15  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The medical supplies have been secured by survivors!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The medical supplies have been secured by survivors!"] call RE;
 [nil,nil,rHINT,"The medical supplies have been secured by survivors!"] call RE;
