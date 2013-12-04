@@ -40,7 +40,7 @@ _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 
 waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"Survivors have eliminated the bandit construction team.", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Survivors have eliminated the bandit construction team."] call RE;
 [nil,nil,rHINT,"Survivors have eliminated the bandit construction team."] call RE;
