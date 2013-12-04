@@ -19,7 +19,7 @@ publicVariable "MCoords";
 sleep 1;
 waitUntil{({alive _x} count (units AxeMurderer)) < 1};
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"Finally! He died! Check the body for medical supplies!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Finally! He died! Check the body for medical supplies!"] call RE;
 [nil,nil,rHINT,"Finally! He died! Check the body for medical supplies!"] call RE;
