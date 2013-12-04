@@ -44,7 +44,7 @@ sleep 3;
 
 waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
 
-//Mission accomplished
+//Mission completed
 [nil,nil,rTitleText,"The stash house is under survivor control!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The stash house is under survivor control!"] call RE;
 [nil,nil,rHINT,"The stash house is under survivor control!"] call RE;
