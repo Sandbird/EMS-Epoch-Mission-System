@@ -59,9 +59,9 @@ sleep 1;
 };
 
 //Mission completed
-[nil,nil,rTitleText,"Good work you've secured the crash site!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Good work you've secured the crash site!"] call RE;
-[nil,nil,rHINT,"Good work you've secured the crash site!"] call RE;
+[nil,nil,rTitleText,"Wrecked HMMWV secured by survivors!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Wrecked HMMWV secured by survivors!"] call RE;
+[nil,nil,rHINT,"Wrecked HMMWV secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
