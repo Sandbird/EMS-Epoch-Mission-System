@@ -20,9 +20,9 @@ _coord12 = [5266.6836,7273.8135,0];
 _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord8, _coord9, _coord10, _coord11, _coord12] call BIS_fnc_selectRandom;
 
 //Mission start
-[nil,nil,rTitleText,"A C-130 has crash landed! Secure it's cargo for yourself!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A C-130 has crash landed! Secure it's cargo for yourself!"] call RE;
-[nil,nil,rHINT,"A C-130 has crash landed! Secure it's cargo for yourself!"] call RE;
+[nil,nil,rTitleText,"A C-130 has crash landed!Survivors secure the cargo!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"A C-130 has crash landed!Survivors secure the cargo!"] call RE;
+[nil,nil,rHINT,"A C-130 has crash landed!Survivors secure the cargo!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -46,7 +46,7 @@ _aispawn = [[(_coords select 0) + 2, _coords select 1,0],40,4,4,1] execVM "\z\ad
 
 
 
-waitUntil{{isPlayer _x && _x distance c130wreck < 60  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance c130wreck < 30  } count playableunits > 0}; 
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
@@ -54,9 +54,9 @@ Ccoords = 0;
 publicVariable "Ccoords";
 
 //Mission accomplished
-[nil,nil,rTitleText,"You've secured the crash site! Good work.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"You've secured the crash site! Good work."] call RE;
-[nil,nil,rHINT,"You've secured the crash site! Good work."] call RE;
+[nil,nil,rTitleText,"Survivors secured the crash site! We'll done.", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"Survivors secured the crash site! We'll done."] call RE;
+[nil,nil,rHINT,"Survivors secured the crash site! We'll done."] call RE;
 
 SM1 = 1;
 [0] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf";
