@@ -25,7 +25,7 @@ _crate addWeaponCargoGlobal ["M4A3_CCO_EP1", 1];
 _crate addWeaponCargoGlobal ["M4A3_RCO_GL_EP1", 1];
 _crate addWeaponCargoGlobal ["M4SPR", 1];
 _crate addWeaponCargoGlobal ["M79_EP1", 1];
-_crate addWeaponCargoGlobal ["MG36_DZN", 1];
+_crate addWeaponCargoGlobal ["Pecheneg_DZ", 1];
 _crate addWeaponCargoGlobal ["Mk_48_DZ", 1];
 _crate addWeaponCargoGlobal ["MP5A5", 1];
 _crate addWeaponCargoGlobal ["MP5SD", 1];
