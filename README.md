@@ -126,3 +126,12 @@ At the very end of you <b>init.sqf</b> file paste the following block of code:
 This will make the mission markers show up on the map for players that have died and respawn, or connect to the server after a mission has already spawned.
 
 <b>Repack your mission PBO using PBO Manager and replace your existing _mission_.pbo file</b>
+
+
+When using other AI Scripts you have to change:
+
+    if (_object getVariable "DZAI" == 1) exitWith {}; //or whatever AI you like
+    
+Also don't forget to replace the server_cleanup.fsm
+
+    if(vehicle _x != _x && (vehicle _x getVariable [""Mission"",0] != 1) && (vehicle _x getVariable [""DZAI"",0] != 1) && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
