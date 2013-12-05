@@ -63,7 +63,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                   case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
                   case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
                   case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Sa61_EP1"]};
                 };
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
@@ -77,7 +77,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                   case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
                   case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1""]};
                   case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Sa61_EP1"]};
                 };
             };
             if (x > 3) then //troops soldiers
@@ -91,7 +91,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                   case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
                   case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
                   case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug""Sa61_EP1"]};
                 };
             };
         };
@@ -100,7 +100,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
                 "Bandit1_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
-                _ailoadout= ["MeleeHatchet","5Rnd_762x51_M24"]
+                _ailoadout= ["MeleeHatchet_DZE","5Rnd_762x51_M24"]
             };
         };
         diag_log format ["AIUNIT: Creating Ins_Soldier_1 by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
