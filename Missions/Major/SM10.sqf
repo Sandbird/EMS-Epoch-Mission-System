@@ -60,6 +60,8 @@ waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0};
 [nil,nil,rGlobalRadio,"The Helicopter is under survivor control!"] call RE;
 [nil,nil,rHINT,"The Helicopter is under survivor control!"] call RE;
 
+deleteMarker "SAR_marker_major";
+
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
