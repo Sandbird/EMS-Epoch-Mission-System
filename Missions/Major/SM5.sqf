@@ -37,7 +37,7 @@ sleep 5;
 _aispawn = [_coords,40,4,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 sleep 5;
 
-waitUntil{{isPlayer _x && _x distance _uralcrash < 30 } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _uralcrash < 30  } count playableunits > 0}; 
 
 //Mission completed
 [nil,nil,rTitleText,"The medical supplies have been secured by survivors!", "PLAIN",6] call RE;
