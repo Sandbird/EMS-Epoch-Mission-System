@@ -60,7 +60,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                   case 2: {["Sa58P_EP1","30Rnd_762x39_SA58"]};
                   case 3: {["Sa58V_CCO_EP1","30Rnd_762x39_SA58"]};
                   case 4: {["Sa58V_EP1","30Rnd_762x39_SA58"};
-                  case 5: {["M4SPR","30Rnd_556x45_Stanag""]};
+                  case 5: {["M4SPR","30Rnd_556x45_Stanag"]};
                   case 6: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
                 };
             };
@@ -71,8 +71,8 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["BAF_L85A2_RIS_SUSAT","30Rnd_556x45_Stanag""]};
-                  case 1: {["RPK_74","75Rnd_545x39_RPK"]};
+                  case 0: {["BAF_L85A2_RIS_SUSAT","30Rnd_556x45_Stanag"]};
+                  case 1: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
                   case 2: {["G36A_camo","30Rnd_556x45_G36"]};
                   case 3: {["M4A1_HWS_GL_SD_Camo","30Rnd_556x45_StanagSD"]};
                 };
