@@ -72,7 +72,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 switch (_rndLOut) do
                 {
                   case 0: {["M249_DZ","200Rnd_556x45_M249"]};
-                  case 1: {["MG36_DZ","100Rnd_556x45_BetaCMag"]};
+                  case 1: {[""Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
                   case 2: {["RPK_74_DZ","75Rnd_545x39_RPK"]};
                 };
             };
@@ -87,7 +87,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                   case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
                   case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
                   case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Sa61_EP1"]};
                 };
             };
         };
