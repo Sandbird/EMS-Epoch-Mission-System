@@ -4,9 +4,9 @@
 
 Current fixlist :
  Edited some or most of the mission complete text's ;
- Changed distance to 30meters for completing a mission so the next one starts up then;
- Deleted all pistols fo AI in progress;
- axemurderer  _ailoadout= ["MeleeHatchet_DZE"];
+ Changed distance to 30meters for completing a mission so the next one starts up then ;
+ Deleted all pistols fo AI in progress ;
+ axemurderer  _ailoadout= ["MeleeHatchet_DZE"] ;
 
 _Credits: Lazyink, TheSzerdi, Falcyn , TAWTonic, EPOCH DEV's<br>
 Merged DayZ Chernarus Mission System's from TheSzerdi and Lazyink with permission._
