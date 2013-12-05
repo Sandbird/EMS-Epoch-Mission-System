@@ -72,8 +72,8 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                 switch (_rndLOut) do
                 {
                   case 0: {["M249_DZ","200Rnd_556x45_M249"]};
-                  case 1: {["MG36_DZ","100Rnd_556x45_BetaCMag"]};
-                  case 2: {["RPK_74_DZ","75Rnd_545x39_RPK"]};
+                  case 1: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
+                  case 2: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
                 };
             };
             if (x > 3) then //troops soldiers
@@ -87,7 +87,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                   case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1","20Rnd_B_765x17_Ball"]};
                   case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
                   case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1","20Rnd_B_765x17_Ball"]};
-                  case 3: {["VSS_vintorez_DZ","20Rnd_9x39_SP5_VSS","Sa61_EP1","20Rnd_B_765x17_Ball"]};
+                  case 3: {["G36_C_SD_camo","30Rnd_556x45_StanagSD""Sa61_EP1","20Rnd_B_765x17_Ball"]};
                 };
             };
         };
