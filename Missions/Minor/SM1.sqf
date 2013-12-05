@@ -26,7 +26,7 @@ sleep 5;
 [_coords,80,4,2,1] execVM "\z\addons\dayz_server\missions\add_unit_server2.sqf";//AI Guards
 sleep 1;
 
-waitUntil{({alive _x} count (units SniperTeam)) < 30};
+waitUntil{({alive _x} count (units SniperTeam)) < 1};
 
 //Mission completed
 [nil,nil,rTitleText,"The hunting party has been wiped out!", "PLAIN",6] call RE;
