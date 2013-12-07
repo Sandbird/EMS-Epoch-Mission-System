@@ -122,10 +122,15 @@ This will make the mission markers show up on the map for players that have died
 <b>Repack your mission PBO using PBO Manager and replace your existing _mission_.pbo file</b>
 
 
-When using other AI Scripts you have to change:
+Using other AI Scripts you have to change:
 
-    if (_object getVariable "DZAI" == 1) exitWith {}; //or whatever AI you like
+   " if (_object getVariable "DZAI" == 1) exitWith {}; //or whatever AI you like
     
-Also don't forget to replace the server_cleanup.fsm
+For Epoch 1.0.2.5 don't forget to replace the server_cleanup.fsm
 
-    if(vehicle _x != _x && (vehicle _x getVariable [""Mission"",0] != 1) && (vehicle _x getVariable [""DZAI"",0] != 1) && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
+   " if(vehicle _x != _x && (vehicle _x getVariable [""Mission"",0] != 1) && (vehicle _x getVariable [""DZAI"",0] != 1) && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
+    
+
+server_cleanup.fsm Epoch 1.0.3:
+
+" if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor)&& (vehicle _x getVariable [""Mission"",0] != 1) && (vehicle _x getVariable [""Sarge"",0] != 1) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
