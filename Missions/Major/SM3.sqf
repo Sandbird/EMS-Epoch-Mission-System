@@ -48,7 +48,7 @@ _aispawn = [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_se
     SAR_marker_major = _ai_marker;
    diag_log("Mission-DEBUG - MISSION AI MARKER DONE");
 sleep 1; //just in case to prevent the marker from not being found in time due to server low fps
-    [SAR_marker_major,3,5,6,"patrol",false] call SAR_AI;
+    [SAR_marker_major,3,5,6,"fortify",false] call SAR_AI;
    diag_log("Mission-DEBUG - SPAWNED MISSION SARGE AI");
 
 waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
