@@ -55,15 +55,17 @@ sleep 1; //just in case to prevent the marker from not being found in time due t
 
 waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0}; 
 
-[] execVM "debug\remmarkers.sqf";
-MissionGo = 0;
-Ccoords = 0;
-publicVariable "Ccoords";
-
 //Mission completed
 [nil,nil,rTitleText,"The humvee is under survivor control!", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"The humvee is under survivor control!"] call RE;
 [nil,nil,rHINT,"The humvee is under survivor control!"] call RE;
+
+deleteMarker "SAR_marker_major";
+
+[] execVM "debug\remmarkers.sqf";
+MissionGo = 0;
+Ccoords = 0;
+publicVariable "Ccoords";
 
 SM1 = 5;
 [0] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf";
