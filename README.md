@@ -125,6 +125,6 @@ Using other AI Scripts you have to change:
 
 tba
 
-</b>server_cleanup.fsm Epoch 1.0.3:</b>
+#server_cleanup.fsm Epoch 1.0.3:
 
 "    if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x) && (typeOf vehicle _x) != ""ParachuteWest"" && (vehicle _x getVariable [""Sarge"",0] != 1) && (vehicle _x getVariable [""DZAI"",0] != 1) && (vehicle _x getVariable [""Mission"",0] != 1) && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
