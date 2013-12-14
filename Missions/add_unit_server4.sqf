@@ -72,7 +72,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 switch (_rndLOut) do
                 {
                   case 0: {["M249_DZ","200Rnd_556x45_M249"]};
-                  case 1: {[""Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
+                  case 1: {["Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
                   case 2: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
                 };
             };
