@@ -91,7 +91,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 };
             };
         };
-        diag_log format ["AIUNIT: Ins_Soldier_1 by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
+        diag_log format ["AIUNIT: GUE_Soldier_2_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
  
         _aiunit enableAI "TARGET";
         _aiunit enableAI "AUTOTARGET";
