@@ -30,11 +30,13 @@ publicVariable "Ccoords";
 [] execVM "debug\addmarkers.sqf";
 
 c130wreck = createVehicle ["C130J_wreck_EP1",[(_coords select 0) + 30, (_coords select 1) - 5,0],[], 0, "NONE"];
-box = createVehicle ["USVehicleBox",[(_coords select 0) - 10, _coords select 1,0],[], 0, "NONE"];
-[BOX] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
-box2 = createVehicle ["USVehicleBox",[(_coords select 0) - 10, (_coords select 1) - 10,0],[], 0, "NONE"];
-[BOX2] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
-_crate2 
+
+_crate = createVehicle ["USVehicleBox",[(_coords select 0) - 10, _coords select 1,0],[], 0, "NONE"];
+[_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
+_crate setVariable ["permaloot",true];
+_crate2 = createVehicle ["USVehicleBox",[(_coords select 0) - 10, (_coords select 1) - 10,0],[], 0, "NONE"];
+[_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
+_crate2 setVariable ["permaloot",true];
 
 
 _aispawn = [[(_coords select 0) + 2, _coords select 1,0],80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
@@ -44,21 +46,6 @@ sleep 5;
 _aispawn = [[(_coords select 0) + 2, _coords select 1,0],40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
 _aispawn = [[(_coords select 0) + 2, _coords select 1,0],40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
-
-
-    _ai_marker = createMarker ["SAR_marker_major", _coords];
-    _ai_marker setMarkerShape "RECTANGLE";
-    _ai_marker setMarkeralpha 0;
-    _ai_marker setMarkerType "Flag";
-    _ai_marker setMarkerBrush "Solid";
-    _ai_marker setMarkerSize [100,100];
-    SAR_marker_major = _ai_marker;
-   diag_log("Mission-DEBUG - MISSION AI MARKER DONE");
-sleep 1; //just in case to prevent the marker from not being found in time due to server low fps
-    [SAR_marker_major,3,5,6,"patrol",false] call SAR_AI;
-   diag_log("Mission-DEBUG - SPAWNED MISSION SARGE AI");
-
-deleteMarker "SAR_marker_major";
 
 waitUntil{{isPlayer _x && _x distance c130wreck < 30  } count playableunits > 0}; 
 
@@ -66,8 +53,6 @@ waitUntil{{isPlayer _x && _x distance c130wreck < 30  } count playableunits > 0}
 [nil,nil,rTitleText,"Survivors secured the crash site! We'll done.", "PLAIN",6] call RE;
 [nil,nil,rGlobalRadio,"Survivors secured the crash site! We'll done."] call RE;
 [nil,nil,rHINT,"Survivors secured the crash site! We'll done."] call RE;
-
-deleteMarker "SAR_marker_major";
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
