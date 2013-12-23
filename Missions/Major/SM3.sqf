@@ -26,12 +26,12 @@ _hummer setVariable ["DZAI",1,true];
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) + 5, (_coords select 1),0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxesM.sqf";
-_crate setVariable ["DZAI",1,true];
+_crate setVariable ["permaloot",true];
 
 
 _crate2 = createVehicle ["USLaunchersBox",[(_coords select 0) + 12, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxesS.sqf";
-_crate2 setVariable ["DZAI",1,true];
+_crate setVariable ["permaloot",true];
 
 _aispawn = [_coords,80,6,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 sleep 5;
