@@ -21,7 +21,7 @@ _humveecrash setVariable ["Sarge",1,true];
 
 _crate3 = createVehicle ["RULaunchersBox",[(_coords select 0) - 14, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate3] execVM "\z\addons\dayz_server\missions\misc\fillBoxesH.sqf";
-_crate3 setVariable ["Sarge",1,true];
+_crate3 setVariable ["permaloot",true];
 
 [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 sleep 1;
@@ -39,7 +39,6 @@ waitUntil{{isPlayer _x && _x distance _humveecrash < 30  } count playableunits >
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";
-
 
 SM1 = 5;
 [0] execVM "\z\addons\dayz_server\missions\minor\SMfinder.sqf";
