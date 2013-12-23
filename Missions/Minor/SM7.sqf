@@ -11,7 +11,6 @@ _coords = [getMarkerPos "center",0,7000,2,0,2000,0] call BIS_fnc_findSafePos;
 [nil,nil,rGlobalRadio,"A sniper team has been spotted!Kill'em all"] call RE;
 [nil,nil,rHINT,"A sniper team has been spotted!Kill'em all"] call RE;
 
-
 MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
