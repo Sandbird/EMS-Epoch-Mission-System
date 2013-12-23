@@ -1,4 +1,6 @@
 //APC Mission Created by TheSzerdi Edited by Falcyn [QF]
+//Edited for EMS by Fuchs
+
 private ["_coords","_dummymarker","_chopper","_wait","_coord1","_coord2","_coord3","_coord4","_coord5","_coord6","_coord7","_coord8","_coord9","_coord10","_coord11","_coord12"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMajor.sqf";
 WaitUntil {MissionGo == 1};
