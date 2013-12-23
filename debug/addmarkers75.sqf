@@ -6,6 +6,6 @@ while{MissionGoMinor == 1} do { //refresh marker script by *hs-s.com | waTTe - w
     _MainMarker75 setMarkerBrush "Grid";        // Set style of marker
     _MainMarker75 setMarkerAlpha 0.75;        // Set transparency of marker
     _MainMarker75 setMarkerSize [150,150];        // Set size of marker
-sleep 15;
+sleep 25;
     deleteMarker _MainMarker75;
 };
