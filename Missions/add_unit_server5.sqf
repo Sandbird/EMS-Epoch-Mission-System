@@ -54,7 +54,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if (x == 1) then //one troops comander
             {
-                "Ins_Soldier_1" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"LIEUTENANT"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"LIEUTENANT"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -68,7 +68,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
             {
-                "Ins_Soldier_1" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"SERGEANT"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"SERGEANT"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -82,7 +82,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             };
             if (x > 3) then //troops soldiers
             {
-                "Ins_Soldier_1" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"CORPORAL"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"CORPORAL"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -99,11 +99,11 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
-                "Bandit1_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
+                "Rocker1_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
                 _ailoadout= ["MeleeHatchet_DZE","5Rnd_762x51_M24"]
             };
         };
-        diag_log format ["AIUNIT: Creating Ins_Soldier_1 by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
+        diag_log format ["AIUNIT: Creating GUE_Soldier_2_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
  
         _aiunit enableAI "TARGET";
         _aiunit enableAI "AUTOTARGET";
