@@ -1,4 +1,5 @@
 //Bandit Supply Heli Crash by lazyink (Full credit for original code to TheSzerdi & TAW_Tonic)
+//Edited for EMS by Fuchs
 
 private ["_coords","_MainMarker","_chopper","_wait"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMajor.sqf";
