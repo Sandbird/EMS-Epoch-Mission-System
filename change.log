@@ -17,7 +17,7 @@ Development on this project is currently done by TheFuchs and MimiC.
 * [FIXED] Completion text in mission Major/Minor wasn't correct
 * [FIXED] Minor\SM8.sqf mission would spawn AI out in the water
 * [UPDATED] Changed Major\SM9.sqf and Major\SM13.sqf to construction missions with high value construction loot as the reward
-* [UPDATED] Organized loot tables for mission rewards
+* [UPDATED] Reorganized loot tables for mission rewards
 * [UPDATED] Reduced loot quantity on mission rewards
 * [REMOVED] AK SD ammunition from loot tables
 * [REMOVED] Sarge variable replaced to DZAI
