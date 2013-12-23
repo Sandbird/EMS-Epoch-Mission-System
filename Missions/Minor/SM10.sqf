@@ -1,5 +1,4 @@
 //Helicopter crash Mission Created by TheSzerdi Edited by Falcyn [QF]
-_hummer setVariable ["DZAI",1,true];
 
 private ["_coords","_itemType","_itemChance","_weights","_index","_iArray","_num","_nearby","_checking","_people","_wait","_dummymarker"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMinor.sqf";
