@@ -35,7 +35,7 @@ Make a copy of your <b>dayz_server.pbo</b> and rename it <b>dayz_server.pbo.bak<
 
 Unpack your <b>dayz_server.pbo</b> to a folder called <b>dayz_server</b>
 
-Copy the <b>Missions</b> folder from the EMS download ,paste and place the contents in the existing 1.0.3.1 missions folder <b>dayz_server</b>
+Copy the <b>Missions</b> folder from the EMS download ,paste and place the contents in the existing since Patch 1.0.3.1 missions folder <b>dayz_server</b>
 
 
 <b>Edit your server_functions.sqf</b><br>Located: dayz_server\init\server_functions.sqf<br>
