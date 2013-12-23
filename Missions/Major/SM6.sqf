@@ -1,4 +1,5 @@
 //Medical Crate by lazyink (Full credit for original code to TheSzerdi & TAW_Tonic)
+//Edited for EMS by Fuchs
 
 private ["_coords","_MainMarker","_wait"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMajor.sqf";
@@ -47,7 +48,6 @@ waitUntil{{isPlayer _x && _x distance _hummer < 30  } count playableunits > 0};
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";
-
 
 
 SM1 = 5;
