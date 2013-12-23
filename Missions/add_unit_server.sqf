@@ -22,7 +22,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
-                "Bandit1_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
+                "BanditW2_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
                 _rndLOut=floor(random 4);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -50,7 +50,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if (x == 1) then //one troops comander
             {
-                "Bandit1_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"LIEUTENANT"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"LIEUTENANT"];
                 _rndLOut=floor(random 7);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -79,7 +79,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             };
             if (x > 3) then //troops soldiers
             {
-                "Ins_Soldier_1" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"CORPORAL"];
+                "GUE_Soldier_Crew_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"CORPORAL"];
          
                 _rndLOut=floor(random 5);
                 _ailoadout=
