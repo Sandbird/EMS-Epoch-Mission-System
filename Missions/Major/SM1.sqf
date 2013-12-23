@@ -44,7 +44,6 @@ waitUntil{{isPlayer _x && _x distance _hummer < 30  } count playableunits > 0};
 [nil,nil,rGlobalRadio,"The weapons cache is under survivor control!"] call RE;
 [nil,nil,rHINT,"The weapons cache is under survivor control!"] call RE;
 
-deleteMarker "SAR_marker_major";
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
