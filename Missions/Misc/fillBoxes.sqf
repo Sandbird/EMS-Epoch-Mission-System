@@ -30,7 +30,7 @@ _crate addMagazineCargoGlobal ["30Rnd_556x45_G36", 20];
 _crate addMagazineCargoGlobal ["30Rnd_556x45_StanagSD", 20];
 _crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 20];
 _crate addMagazineCargoGlobal ["20Rnd_556x45_Stanag", 20];
-_crate addMagazineCargoGlobal ["75Rnd_545x39_RPK", 20];
+_crate addMagazineCargoGlobal ["75Rnd_545x39_RPK", 2];
 
 // ITEMS
 _crate addWeaponCargoGlobal ["ItemToolbox", 5];
@@ -40,4 +40,4 @@ _crate addMagazineCargoGlobal ["Skin_Soldier1_DZ", 2];
 _crate addMagazineCargoGlobal ["Skin_Camo1_DZ", 2];
 
 // BACKPACKS
-_crate addBackpackCargoGlobal ['DZ_Backpack_EP1', 1];
+_crate addBackpackCargoGlobal ['DZ_LargeGunBag_EP1', 1];
