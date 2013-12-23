@@ -85,7 +85,11 @@ Copy the <b>Missions</b> folder from the EMS download ,paste and place the conte
 
 <b>Insert this after it:</b>
 
-    if (_object getVariable "DZAI" == 1) exitWith {}; 
+    if (_object getVariable "DZAI" == 1) exitWith {};
+
+    if (!_parachuteWest and !(locked _object)) then {
+    //if (_objectID == "0" && _uid == "0") then
+	if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] !=1)&&(vehicle_objectgetVariable ["DZAI",0] !=1)) then
 
 <b>Edit server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
 
