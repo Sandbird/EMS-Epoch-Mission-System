@@ -1,4 +1,4 @@
-// Construction Mission Created by TheSzerdi Edited by MimiC
+// Construction Mission Created by TheSzerdi
 //Edited for EMS by Fuchs
 
 private ["_coords","_dummymarker","_wait","_coord1","_coord2","_coord3","_coord4","_coord5","_coord6","_coord7","_coord8","_coord9","_coord10","_coord11","_coord12"];
