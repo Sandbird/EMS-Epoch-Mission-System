@@ -66,7 +66,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
             {
-                "Bandit1_DZ" createUnit [_unitpos, LandingParty, "_aiunit=this;",1,"SERGEANT"];
+                "CZ_Soldier_Sniper_EP1_DZ" createUnit [_unitpos, LandingParty, "_aiunit=this;",1,"SERGEANT"];
                 _rndLOut=floor(random 4);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -79,7 +79,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
             };
             if (x > 3) then //troops soldiers
             {
-                "BAF_Soldier_Sniper_MTP" createUnit [_unitpos, LandingParty, "_aiunit=this;",1,"CORPORAL"];
+                "GUE_Soldier_Crew_DZ" createUnit [_unitpos, LandingParty, "_aiunit=this;",1,"CORPORAL"];
          
                 _rndLOut=floor(random 5);
                 _ailoadout=
@@ -89,11 +89,11 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                   case 1: {["M24","5Rnd_762x51_M24"]};
                   case 2: {["M24_des_EP1","5Rnd_762x51_M24"]};
                   case 3: {["SVD","10Rnd_762x54_SVD"]};
-			      case 4: {["AK_107_pso","30Rnd_545x39_AK"]};
+	          case 4: {["AK_107_pso","30Rnd_545x39_AK"]};
                 };
             };
         };
-        diag_log format ["AIUNIT: Creating BAF_Soldier_L_DDPM by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
+        diag_log format ["AIUNIT: Creating GUE_Soldier_Crew_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
  
         _aiunit enableAI "TARGET";
         _aiunit enableAI "AUTOTARGET";
