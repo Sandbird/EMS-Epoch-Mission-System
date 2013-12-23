@@ -592,34 +592,3 @@ private ["_deletedLoot","_startTime","_looted","_objectPos","_noPlayerNear","_ne
 
 	diag_log (format["CLEANUP: DELETED %1 ITEMS, RUNTIME: %2",_deletedLoot,(_endTime - _startTime)]);
 };
-
-//Balota Airfield Strip
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\balota.sqf";
-//North West Airfield
-call compile preProcessFileLineNumbers "\z\addons\dayz_server\buildings\nwaf.sqf";
-//North East Airfield
-call compile preProcessFileLineNumbers "\z\addons\dayz_server\buildings\neaf.sqf";
-//Berezino Military Camp
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\berezino.sqf";
-//Kamenka Addons
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\kamenka.sqf";
-//Cherno Improved
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\cherno.sqf";
-//Zelenogorsk Addons
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\zeleno.sqf";
-//Stary Addons
-//call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\stary.sqf";
-//Cap G. Addons
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\capg.sqf";
-//Abandoned camps
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\milicamps.sqf";
-//Elektro Addons
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\elektro.sqf";
-//Skalisty Military Refuge
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildings\skalistyrefuge.sqf";
-//Balota Airfield Camp
-call compile preProcessFileLineNumbers "z\addons\dayz_server\buildingsepo\epochbalota.sqf";
-//West Kamenka Enhanced
-call compile preProcessFileLineNumbers "\z\addons\dayz_server\buildingsepo\epochkamenka.sqf";
-//Cherno Military Camp
-call compile preProcessFileLineNumbers "\z\addons\dayz_server\buildingsepo\epochcherno.sqf";
