@@ -99,7 +99,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
-                "Rocker1_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
+                "Rocker4_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
                 _ailoadout= ["MeleeHatchet_DZE","5Rnd_762x51_M24"]
             };
         };
