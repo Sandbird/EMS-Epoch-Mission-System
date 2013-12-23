@@ -31,36 +31,24 @@ publicVariable "Ccoords";
 _chopper = ["AH64D_EP1","CH_47F_EP1_DZE","AH1Z"] call BIS_fnc_selectRandom;
 
 hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
-hueychop setVariable ["Sarge",1,true];
-hueychop setFuel 0;
-hueychop setVehicleAmmo 0.5;
-/*
+hueychop setVariable ["DZAI",1,true];
+hueychop setFuel 0.25;
+hueychop setVehicleAmmo 0.25;
+
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
 _aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
-*/
-    _ai_marker = createMarker ["SAR_marker_major", _coords];
-    _ai_marker setMarkerShape "RECTANGLE";
-    _ai_marker setMarkeralpha 0;
-    _ai_marker setMarkerType "Flag";
-    _ai_marker setMarkerBrush "Grid";
-    _ai_marker setMarkerSize [100,100];
-    SAR_marker_major = _ai_marker;
-    diag_log("Mission-DEBUG - MISSION AI MARKER DONE");
-    sleep 1; //just in case to prevent the marker from not being found in time due to server low fps
-    [SAR_marker_major,3,3,6,"patrol",false] call SAR_AI;
-    diag_log("Mission-DEBUG - SPAWNED MISSION SARGE AI");
+
 
 waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0}; 
 
 //Mission completed
-[nil,nil,rTitleText,"The Helicopter is under survivor control!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The Helicopter is under survivor control!"] call RE;
-[nil,nil,rHINT,"The Helicopter is under survivor control!"] call RE;
+[nil,nil,rTitleText,"The Helicopters were under survivor control!", "PLAIN",6] call RE;
+[nil,nil,rGlobalRadio,"The Helicopters were under survivor control!"] call RE;
+[nil,nil,rHINT,"The Helicopters were under survivor control!"] call RE;
 
-deleteMarker "SAR_marker_major";
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
