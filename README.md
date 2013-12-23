@@ -86,7 +86,7 @@ Copy the <b>Missions</b> folder from the EMS download and paste it into the root
 
 <b>Insert this after it:</b>
 
-    if (_object getVariable "Mission" == 1) exitWith {};
+    if (_object getVariable "DZAI" == 1) exitWith {}; 
 
 <b>Edit server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
 
