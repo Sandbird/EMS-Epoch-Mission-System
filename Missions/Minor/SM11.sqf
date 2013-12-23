@@ -1,5 +1,6 @@
 //Humvee wreck Mission Created by TheSzerdi Edited by Falcyn [QF]
 
+
 private ["_coords","_itemType","_itemChance","_weights","_index","_iArray","_num","_nearby","_checking","_people","_wait","_dummymarker"];
 [] execVM "\z\addons\dayz_server\Missions\SMGoMinor.sqf";
 WaitUntil {MissionGoMinor == 1};
@@ -17,7 +18,7 @@ publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 humveecrash = createVehicle ["HMMWVwreck",_coords,[], 0, "CAN_COLLIDE"];
-humveecrash setVariable ["Sarge",1,true];
+humveecrash setVariable ["DZAI",1,true];
 
 [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 1;
