@@ -1,6 +1,6 @@
 ## Epoch Mission System [EMS]
-### Version 0.2.1
-#### fixes from 04.12.2013 by Fuchs 
+### Version 0.2.3
+#### fixes from 23.12.2013 by Fuchs 
 
 _Credits: Lazyink, TheSzerdi, Falcyn , TAWTonic, EPOCH DEV's<br>
 Merged DayZ Chernarus Mission System's from TheSzerdi and Lazyink with permission._
