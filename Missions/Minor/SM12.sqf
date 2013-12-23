@@ -16,7 +16,7 @@ publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 uralcrash = createVehicle ["uralwreck",_coords,[], 0, "CAN_COLLIDE"];
-uralcrash setVariable ["Sarge",1,true];
+uralcrash setVariable ["DZAI",1,true];
 
 [_coords,40,4,3,0] execVM "\z\addons\dayz_server\Missions\add_unit_server4.sqf";//AI Guards
 sleep 1;
