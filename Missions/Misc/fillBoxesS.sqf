@@ -24,7 +24,6 @@ _crate2 addMagazineCargoGlobal ["10Rnd_762x54_SVD", 10];
 _crate2 addWeaponCargoGlobal ["ItemToolbox", 5];
 _crate2 addWeaponCargoGlobal ["ItemMatchbox_DZE", 5];
 _crate2 addWeaponCargoGlobal ["ChainSaw", 5];
-_crate2 addWeaponCargoGlobal ["ItemMixOil", 5];
 _crate2 addWeaponCargoGlobal ["ItemJerryMixed4", 5];
 
 // BACKPACKS
