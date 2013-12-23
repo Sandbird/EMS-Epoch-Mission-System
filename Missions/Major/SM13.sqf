@@ -27,9 +27,9 @@ Ccoords = _coords;
 publicVariable "Ccoords";
 [] execVM "debug\addmarkers.sqf";
 
-box = createVehicle ["USLaunchersBox",[(_coords select 0) - 3, (_coords select 1) - 3,0],[], 0, "NONE"];
-[BOX] execVM "\z\addons\dayz_server\missions\misc\fillConstructionMajor.sqf";
-_box setVariable ["permaloot",true];
+_crate = createVehicle ["USLaunchersBox",[(_coords select 0) - 3, (_coords select 1) - 3,0],[], 0, "NONE"];
+[crate] execVM "\z\addons\dayz_server\missions\misc\fillConstructionMajor.sqf";
+_crate setVariable ["permaloot",true];
 
 _aispawn = [_coords,20,3,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 2;
