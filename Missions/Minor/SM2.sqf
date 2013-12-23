@@ -25,22 +25,22 @@ _baserunover4 = createVehicle ["UAZ_Unarmed_UN_EP1",[(_coords select 0) + 10, (_
 _baserunover5 = createVehicle ["HMMWV_DZ",[(_coords select 0) + 15, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
 _baserunover6 = createVehicle ["SUV_DZ",[(_coords select 0) + 25, (_coords select 1) - 15,0],[], 0, "CAN_COLLIDE"];
 
-_baserunover setVariable ["Sarge",1,true];
-_baserunover1 setVariable ["Sarge",1,true];
-_baserunover2 setVariable ["Sarge",1,true];
-_baserunover3 setVariable ["Sarge",1,true];
-_baserunover4 setVariable ["Sarge",1,true];
-_baserunover5 setVariable ["Sarge",1,true];
-_baserunover6 setVariable ["Sarge",1,true];
+_baserunover setVariable ["DZAI",1,true];
+_baserunover1 setVariable ["DZAI",1,true];
+_baserunover2 setVariable ["DZAI",1,true];
+_baserunover3 setVariable ["DZAI",1,true];
+_baserunover4 setVariable ["DZAI",1,true];
+_baserunover5 setVariable ["DZAI",1,true];
+_baserunover6 setVariable ["DZAI",1,true];
 
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 3, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxesM.sqf";
-_crate setVariable ["Sarge",1,true];
+_crate setVariable ["permaloot",true];
 
 _crate2 = createVehicle ["USLaunchersBox",[(_coords select 0) - 8, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxesS.sqf";
-_crate2 setVariable ["Sarge",1,true];
+_crate2 setVariable ["permaloot",true];
 
 
 [[(_coords select 0) - 20, (_coords select 1) - 15,0],40,4,2,0] execVM "\z\addons\dayz_server\missions\add_unit_server2.sqf";//AI Guards
@@ -52,7 +52,6 @@ sleep 3;
 [[(_coords select 0) + 20, (_coords select 1) + 15,0],40,4,2,0] execVM "\z\addons\dayz_server\missions\add_unit_server2.sqf";//AI Guards
 sleep 3;
 
-
 waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
 
 //Mission completed
@@ -60,13 +59,10 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits >
 [nil,nil,rGlobalRadio,"The Medical Outpost is under survivor control!"] call RE;
 [nil,nil,rHINT,"The Medical Outpost is under survivor control!"] call RE;
 
-
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";
-
-
 
 SM1 = 1;
 [0] execVM "\z\addons\dayz_server\missions\minor\SMfinder.sqf";
