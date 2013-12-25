@@ -16,7 +16,7 @@ publicVariable "MCoords";
 chopcrash = createVehicle ["Land_mi8_crashed",_coords,[], 0, "CAN_COLLIDE"];
 chopcrash setVariable ["Sarge",1,true];
 
-[_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+[_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server3.sqf";//AI Guards
 sleep 1;
 
 if (isDedicated) then {
