@@ -29,12 +29,12 @@ Ccoords = _coords;
 publicVariable "Ccoords";
 [] execVM "debug\addmarkers.sqf";
 
-_chopper = ["AH64D_EP1","CH_47F_EP1_DZE","AH1Z"] call BIS_fnc_selectRandom;
+_chopper = ["CH_47F_EP1_DZE","UH1H_DZE"] call BIS_fnc_selectRandom;
 
 hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
-hueychop setVariable ["DZAI",1,true];
+hueychop setVariable ["Sarge",1,true];
 hueychop setFuel 0.25;
-hueychop setVehicleAmmo 0.25;
+hueychop setVehicleAmmo 0.00;
 
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
