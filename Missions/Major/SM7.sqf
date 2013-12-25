@@ -40,7 +40,7 @@ _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_se
 waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0}; 
 
 //Mission completed
-[nil,nil,rTitleText,"The gear cache has been found, nice work, enjoy the spoils.", "PLAIN",6] call RE;
+[nil,nil,rTitleText,"Gear cache cleared by survivors, nice work, enjoy the spoils.", "PLAIN",6] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
