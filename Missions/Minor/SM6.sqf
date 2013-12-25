@@ -8,16 +8,13 @@ _coords = [getMarkerPos "center",0,5500,10,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A bandit weapons truck has crashed! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A bandit weapons truck has crashed! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A bandit weapons truck has crashed! Check your map for the location!"] call RE;
-
 
 MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 _uralcrash = createVehicle ["UralWreck",_coords,[], 0, "CAN_COLLIDE"];
-_uralcrash setVariable ["DZAI",1,true];
+_uralcrash setVariable ["Sarge",1,true];
 
 _crate = createVehicle ["USLaunchersBox",[(_coords select 0) + 3, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxes.sqf";
@@ -45,8 +42,6 @@ waitUntil{{isPlayer _x && _x distance _uralcrash < 30  } count playableunits > 0
 
 //Mission accomplished
 [nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The crash site has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"The crash site has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
