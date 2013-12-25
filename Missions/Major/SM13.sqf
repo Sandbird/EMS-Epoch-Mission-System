@@ -22,8 +22,6 @@ _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord
 
 //Mission start
 [nil,nil,rTitleText,"Intel suggests bandits may be trying to build a base nearby, locate and terminate before they get fortified.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Intel suggests bandits may be trying to build a base nearby, locate and terminate before they get fortified."] call RE;
-[nil,nil,rHINT,"Intel suggests bandits may be trying to build a base nearby, locate and terminate before they get fortified."] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -45,8 +43,6 @@ waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0};
 
 //Mission completed
 [nil,nil,rTitleText,"Survivors have eliminated the bandit construction team.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Survivors have eliminated the bandit construction team."] call RE;
-[nil,nil,rHINT,"Survivors have eliminated the bandit construction team."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
