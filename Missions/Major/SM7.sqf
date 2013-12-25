@@ -22,8 +22,6 @@ _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord
 
 //Mission start
 [nil,nil,rTitleText,"A gear cache has been airdropped! Secure it for yourself!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A gear cache has been airdropped! Secure it for yourself!"] call RE;
-[nil,nil,rHINT,"A gear cache has been airdropped! Secure it for yourself!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -43,8 +41,6 @@ waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0};
 
 //Mission completed
 [nil,nil,rTitleText,"The gear cache has been found, nice work, enjoy the spoils.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The gear cache has been found, nice work, enjoy the spoils."] call RE;
-[nil,nil,rHINT,"The gear cache has been found, nice work, enjoy the spoils."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
