@@ -9,9 +9,6 @@ _coords =  [getMarkerPos "center",0,5500,10,0,20,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A group of bandits have taken over a Medical Outpost! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A group of bandits have taken over a Medical Outpost! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A group of bandits have taken over a Medical Outpost! Check your map for the location!"] call RE;
-
 
 MCoords = _coords;
 publicVariable "MCoords";
@@ -25,13 +22,13 @@ _baserunover4 = createVehicle ["UAZ_Unarmed_UN_EP1",[(_coords select 0) + 10, (_
 _baserunover5 = createVehicle ["HMMWV_DZ",[(_coords select 0) + 15, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
 _baserunover6 = createVehicle ["SUV_DZ",[(_coords select 0) + 25, (_coords select 1) - 15,0],[], 0, "CAN_COLLIDE"];
 
-_baserunover setVariable ["DZAI",1,true];
-_baserunover1 setVariable ["DZAI",1,true];
-_baserunover2 setVariable ["DZAI",1,true];
-_baserunover3 setVariable ["DZAI",1,true];
-_baserunover4 setVariable ["DZAI",1,true];
-_baserunover5 setVariable ["DZAI",1,true];
-_baserunover6 setVariable ["DZAI",1,true];
+_baserunover setVariable ["Sarge",1,true];
+_baserunover1 setVariable ["Sarge",1,true];
+_baserunover2 setVariable ["Sarge",1,true];
+_baserunover3 setVariable ["Sarge",1,true];
+_baserunover4 setVariable ["Sarge",1,true];
+_baserunover5 setVariable ["Sarge",1,true];
+_baserunover6 setVariable ["Sarge",1,true];
 
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 3, _coords select 1,0],[], 0, "CAN_COLLIDE"];
@@ -56,8 +53,6 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits >
 
 //Mission completed
 [nil,nil,rTitleText,"The Medical Outpost is under survivor control!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The Medical Outpost is under survivor control!"] call RE;
-[nil,nil,rHINT,"The Medical Outpost is under survivor control!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
