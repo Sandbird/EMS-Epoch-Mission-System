@@ -8,16 +8,13 @@ _coords =  [getMarkerPos "center",0,7000,10,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A helicopter has crashed! Kill any survivors and secure the loot!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A helicopter has crashed! Kill any survivors and secure the loot!"] call RE;
-[nil,nil,rHINT,"A helicopter has crashed! Kill any survivors and secure the loot!"] call RE;
-
 
 MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 chopcrash = createVehicle ["Land_mi8_crashed",_coords,[], 0, "CAN_COLLIDE"];
-chopcrash setVariable ["DZAI",1,true];
+chopcrash setVariable ["Sarge",1,true];
 
 [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 1;
@@ -60,8 +57,6 @@ sleep 1;
 
 //Mission complete
 [nil,nil,rTitleText,"Wrecked Chopper has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Wrecked Chopper has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"Wrecked Chopper has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
