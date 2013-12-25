@@ -39,7 +39,6 @@ sleep 3;
 [[(_coords select 0) + 20, (_coords select 1) + 15,0],40,4,2,0] execVM "\z\addons\dayz_server\missions\add_unit_server2.sqf";//AI Guards
 sleep 3;
 
-
 waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits > 0}; 
 
 //Mission completed
