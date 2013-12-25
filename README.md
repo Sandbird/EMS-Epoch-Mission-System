@@ -88,11 +88,11 @@ Copy the <b>Missions</b> folder from the EMS download ,paste and place the conte
 
 <b>Insert this after it:</b>
 
-    if (_object getVariable "DZAI" == 1) exitWith {};
+    if (_object getVariable "Sarge" == 1) exitWith {};
 
     if (!_parachuteWest and !(locked _object)) then {
     //if (_objectID == "0" && _uid == "0") then
-	if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] !=1)&&(vehicle_objectgetVariable ["DZAI",0] !=1)) then
+      if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] != 1)) then
 
 <b>Edit server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
 
@@ -102,7 +102,7 @@ Copy the <b>Missions</b> folder from the EMS download ,paste and place the conte
 
 <b>Replace with this:</b>
 
-    if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x)  && !(typeOf vehicle _x) in DZE_safeVehicle) && (vehicle _x getVariable [""Mission"",0] && (vehicle _x getVariable [""DZAI"",0] != 1) && (vehicle _x getVariable [""Sarge"",0] != 1)) then {" \n
+    if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x)  && !(typeOf vehicle _x) in DZE_safeVehicle) && (vehicle _x getVariable [""Sarge"",0] != 1)) then {" \n
 
 <b>Repack your dayz_server.pbo and replace your original one.</b>
 
