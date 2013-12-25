@@ -9,8 +9,6 @@ _coords =  [getMarkerPos "center",0,5000,10,0,20,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A group of bandits have set up a stash house! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A group of bandits have set up a stash house! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A group of bandits have set up a stash house! Check your map for the location!"] call RE;
 
 MCoords = _coords;
 publicVariable "MCoords";
@@ -23,13 +21,13 @@ _hummer = createVehicle ["HMMWV_DZ",[(_coords select 0) + 10, (_coords select 1)
 _hummer2 = createVehicle ["UAZ_Unarmed_UN_EP1",[(_coords select 0) - 25, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
 _hummer3 = createVehicle ["SUV_DZ",[(_coords select 0) + 25, (_coords select 1) - 15,0],[], 0, "CAN_COLLIDE"];
 
-_baserunover setVariable ["DZAI",1,true];
-_baserunover2 setVariable ["DZAI",1,true];
-_baserunover3 setVariable ["DZAI",1,true];
-_hummer setVariable ["DZAI",1,true];
-_hummer1 setVariable ["DZAI",1,true];
-_hummer2 setVariable ["DZAI",1,true];
-_hummer3 setVariable ["DZAI",1,true];
+_baserunover setVariable ["Sarge",1,true];
+_baserunover2 setVariable ["Sarge",1,true];
+_baserunover3 setVariable ["Sarge",1,true];
+_hummer setVariable ["Sarge",1,true];
+_hummer1 setVariable ["Sarge",1,true];
+_hummer2 setVariable ["Sarge",1,true];
+_hummer3 setVariable ["Sarge",1,true];
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 3, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxes.sqf";
@@ -46,8 +44,6 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits >
 
 //Mission completed
 [nil,nil,rTitleText,"The stash house is under survivor control!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The stash house is under survivor control!"] call RE;
-[nil,nil,rHINT,"The stash house is under survivor control!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
