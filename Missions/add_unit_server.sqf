@@ -40,7 +40,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["LeeEnfield","10x_303","10x_303"]};
+                  case 0: {["M4A1_HWS_GL_SD_Camo","30Rnd_556x45_StanagSD"]};
                   case 1: {["Huntingrifle","5x_22_LR_17_HMR"]};
                   case 2: {["M14_EP1","20Rnd_762x51_DMR"]};
                 };
