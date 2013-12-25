@@ -8,16 +8,13 @@ _coords =  [getMarkerPos "center",0,5000,10,0,1000,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A bandit helicopter has crashed! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A bandit helicopter has crashed! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A bandit helicopter has crashed! Check your map for the location!"] call RE;
-
 
 MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 _chopcrash = createVehicle ["UH60Wreck_DZ",_coords,[], 0, "CAN_COLLIDE"];
-_chopcrash setVariable ["DZAI",1,true];
+_chopcrash setVariable ["Sarge",1,true];
 
 _crate2 = createVehicle ["USLaunchersBox",[(_coords select 0) - 6, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxesS.sqf";
@@ -32,8 +29,6 @@ waitUntil{{isPlayer _x && _x distance _chopcrash < 30  } count playableunits > 0
 
 //Mission completed
 [nil,nil,rTitleText,"Wrecked Chopper has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Wrecked Chopper has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"Wrecked Chopper has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
