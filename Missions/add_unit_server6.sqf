@@ -91,7 +91,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                 };
             };
         };
-        diag_log format ["AIUNIT: Creating NVGoggles by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
+        diag_log format ["AIUNIT: Creating GUE_Soldier_2_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
  
         _aiunit enableAI "TARGET";
         _aiunit enableAI "AUTOTARGET";
@@ -119,6 +119,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
         _aiunit addweapon _aiwep2;
         _aiunit addMagazine _aiammo2;
         _aiunit addMagazine _aiammo2;
+		_aiunit removeWeapon "ItemRadio","NVGoggles";
       //add some garbage
         if (x == 1) then {
         _aiunit addMagazine "SmokeShellGreen";
