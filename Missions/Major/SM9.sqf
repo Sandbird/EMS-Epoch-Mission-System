@@ -22,8 +22,6 @@ _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord
 
 //Mission accomplished
 [nil,nil,rTitleText,"A firebase is being constructed! Stop the bandits and secure the construction materials for yourself!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A firebase is being constructed! Stop the bandits and secure the construction materials for yourself!"] call RE;
-[nil,nil,rHINT,"A firebase is being constructed! Stop the bandits and secure the construction materials for yourself!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -31,6 +29,7 @@ publicVariable "Ccoords";
 
 _base = ["land_fortified_nest_big","Land_Fort_Watchtower"] call BIS_fnc_selectRandom;
 baserunover = createVehicle [_base,[(_coords select 0) - 20, (_coords select 1) - 10,-0.2],[], 0, "NONE"];
+
 _crate = createVehicle ["USLaunchersBox",[(_coords select 0) + 2, (_coords select 1),0],[], 0, "NONE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillConstructionMajor.sqf";
 _crate setVariable ["permaloot",true];
@@ -47,8 +46,6 @@ waitUntil{{isPlayer _x && _x distance baserunover < 30  } count playableunits > 
 
 //Mission completed
 [nil,nil,rTitleText,"Survivors have secured the construction materials.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Survivors have secured the construction materials."] call RE;
-[nil,nil,rHINT,"Survivors have secured the construction materials."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
