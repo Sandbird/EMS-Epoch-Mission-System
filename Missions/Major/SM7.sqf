@@ -31,11 +31,11 @@ _crate = createVehicle ["USVehicleBox",_coords,[], 0, "NONE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
 _crate setVariable ["permaloot",true];
 
-_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server1.sqf";//AI Guards
 sleep 5;
-_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server1.sqf";//AI Guards
 sleep 5;
-_aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
+_aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server1.sqf";//AI Guards
 
 waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0}; 
 
