@@ -8,9 +8,6 @@ _coords =  [getMarkerPos "center",0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission accomplished
 [nil,nil,rTitleText,"A Humvee has crashed! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A Humvee has crashed! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A Humvee has crashed! Check your map for the location!"] call RE;
-
 
 MCoords = _coords;
 publicVariable "MCoords";
@@ -32,8 +29,6 @@ waitUntil{{isPlayer _x && _x distance _humveecrash < 30  } count playableunits >
 
 //Mission completed
 [nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The crash site has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"The crash site has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
