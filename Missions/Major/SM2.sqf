@@ -9,8 +9,6 @@ _coords = [getMarkerPos "center",0,5600,100,0,20,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A C-130 carrying medical supplies has crashed and bandits are securing the site! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A C-130 carrying medical supplies has crashed and bandits are securing the site! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A C-130 carrying medical supplies has crashed and bandits are securing the site! Check your map for the location!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -21,10 +19,10 @@ _hummer = createVehicle ["HMMWV_DZ",[(_coords select 0) - 20, (_coords select 1)
 _hummer1 = createVehicle ["UAZ_Unarmed_UN_EP1",[(_coords select 0) - 30, (_coords select 1) - 10,0],[], 0, "CAN_COLLIDE"];
 _hummer2 = createVehicle ["SUV_DZ",[(_coords select 0) + 10, (_coords select 1) + 5,0],[], 0, "CAN_COLLIDE"];
 
-_c130wreck setVariable ["DZAI",1,true];
-_hummer setVariable ["DZAI",1,true];
-_hummer1 setVariable ["DZAI",1,true];
-_hummer2 setVariable ["DZAI",1,true];
+_c130wreck setVariable ["Sarge",1,true];
+_hummer setVariable ["Sarge",1,true];
+_hummer1 setVariable ["Sarge",1,true];
+_hummer2 setVariable ["Sarge",1,true];
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 10, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxesM.sqf";
@@ -46,8 +44,6 @@ waitUntil{{isPlayer _x && _x distance _c130wreck < 30 } count playableunits > 0}
 
 //Mission completed
 [nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The crash site has been secured by survivors!"] call RE;
-[nil,nil,rHINT,"The crash site has been secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
