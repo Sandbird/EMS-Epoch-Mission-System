@@ -22,7 +22,7 @@ pbxride = createVehicle ["PBX",_coords select 0,[], 0, "NONE"];
 pbxride setVariable ["Sarge",1,true];
 pbxride setFuel 1;
 
-[_coords select 0,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server6.sqf";//AI Guards
+[_coords select 0,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server3.sqf";//AI Guards
 sleep 3;
 LandingParty addVehicle pbxride;
 LandingParty move (_coords select 1);
