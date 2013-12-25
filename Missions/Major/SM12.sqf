@@ -22,8 +22,6 @@ _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord
 
 //Mission start
 [nil,nil,rTitleText,"An APC has broken down! Secure it's firepower for yourself!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"An APC has broken down! Secure it's firepower for yourself!"] call RE;
-[nil,nil,rHINT,"An APC has broken down! Secure it's firepower for yourself!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -32,9 +30,9 @@ publicVariable "Ccoords";
 _chopper = ["BTR60_TK_EP1","LAV25","LAV25_HQ","LAV25_HQ","LAV25_HQ"] call BIS_fnc_selectRandom;
 
 hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
-hueychop setVariable ["DZAI",1,true];
-hueychop setFuel 0.25;
-hueychop setVehicleAmmo 0.25;
+hueychop setVariable ["Sarge",1,true];
+hueychop setFuel 0.55;
+hueychop setVehicleAmmo 0.00;
 
 _aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 5;
@@ -46,8 +44,6 @@ waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0};
 
 //Mission completed
 [nil,nil,rTitleText,"APC secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"APC secured by survivors!"] call RE;
-[nil,nil,rHINT,"APC secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
