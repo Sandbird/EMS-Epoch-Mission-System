@@ -9,16 +9,13 @@ _coords =  [getMarkerPos "center",0,7000,10,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A humvee has crashed! Kill any survivors and secure the loot!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A humvee has crashed! Kill any survivors and secure the loot!"] call RE;
-[nil,nil,rHINT,"A humvee has crashed! Kill any survivors and secure the loot!"] call RE;
-
 
 MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 humveecrash = createVehicle ["HMMWVwreck",_coords,[], 0, "CAN_COLLIDE"];
-humveecrash setVariable ["DZAI",1,true];
+humveecrash setVariable ["Sarge",1,true];
 
 [_coords,40,4,3,1] execVM "\z\addons\dayz_server\missions\add_unit_server4.sqf";//AI Guards
 sleep 1;
@@ -61,8 +58,6 @@ sleep 1;
 
 //Mission completed
 [nil,nil,rTitleText,"Wrecked HMMWV secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Wrecked HMMWV secured by survivors!"] call RE;
-[nil,nil,rHINT,"Wrecked HMMWV secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
