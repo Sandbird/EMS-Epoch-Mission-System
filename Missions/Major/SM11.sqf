@@ -34,9 +34,9 @@ hueychop setVariable ["Sarge",1,true];
 hueychop setFuel 0.55;
 hueychop setVehicleAmmo 0.00;
 
-_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server1.sqf";//AI Guards
+_aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 sleep 5;
-_aispawn = [_coords,40,4,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server1.sqf";//AI Guards
+_aispawn = [_coords,40,4,6,1] execVM "\z\addons\dayz_server\missions\add_unit_server.sqf";//AI Guards
 
 
 waitUntil{{isPlayer _x && _x distance hueychop < 30  } count playableunits > 0}; 
