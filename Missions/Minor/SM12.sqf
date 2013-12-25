@@ -16,7 +16,7 @@ publicVariable "MCoords";
 uralcrash = createVehicle ["uralwreck",_coords,[], 0, "CAN_COLLIDE"];
 uralcrash setVariable ["Sarge",1,true];
 
-[_coords,40,4,3,0] execVM "\z\addons\dayz_server\Missions\add_unit_server4.sqf";//AI Guards
+[_coords,40,4,3,0] execVM "\z\addons\dayz_server\Missions\add_unit_server3.sqf";//AI Guards
 sleep 1;
 
 if (isDedicated) then {
