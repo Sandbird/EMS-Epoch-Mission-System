@@ -13,7 +13,7 @@ MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
-[_coords,80,4,1,2] execVM "\z\addons\dayz_server\Missions\add_unit_server3.sqf";//AI Guards
+[_coords,80,4,1,2] execVM "\z\addons\dayz_server\Missions\add_unit_server1.sqf";//AI Guards
 sleep 1;
 waitUntil{({alive _x} count (units AxeMurderer)) < 1};
 
