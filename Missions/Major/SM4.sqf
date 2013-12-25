@@ -10,8 +10,6 @@ _coords = [getMarkerPos "center",0,5500,30,0,20,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A bandit supply helicopter has crash landed! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"A bandit supply helicopter has crash landed! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"A bandit supply helicopter has crash landed! Check your map for the location!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -20,16 +18,18 @@ publicVariable "Ccoords";
 _chopper = ["UH1H_DZE","Mi17_DZE"] call BIS_fnc_selectRandom;
 
 _hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
-_hueychop setVariable ["DZAI",1,true];
-_hueychop setFuel 0.15;
-_hueychop setVehicleAmmo 0.2;
+_hueychop setVariable ["Sarge",1,true];
+_hueychop setFuel 0.55;
+_hueychop setVehicleAmmo 0.00;
 
 _crate2 = createVehicle ["USLaunchersBox",[(_coords select 0) - 6, _coords select 1,0],[], 0, "CAN_COLLIDE"];
 [_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxesS.sqf";
 _crate2 setVariable ["permaloot",true];
+
 _crate2 = createVehicle ["USLaunchersBox",[(_coords select 0) + 6, _coords select 1,0],[], 90, "CAN_COLLIDE"];
 [_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxesS.sqf";
 _crate2 setVariable ["permaloot",true];
+
 _crate3 = createVehicle ["RULaunchersBox",[(_coords select 0) - 14, (_coords select 1) -10,0],[], 0, "CAN_COLLIDE"];
 [_crate3] execVM "\z\addons\dayz_server\missions\misc\fillBoxesH.sqf";
 _crate3 setVariable ["permaloot",true];
@@ -44,8 +44,6 @@ waitUntil{{isPlayer _x && _x distance _hueychop < 30  } count playableunits > 0}
 
 //Mission accomplished
 [nil,nil,rTitleText,"The helicopter has been taken by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"The helicopter has been taken by survivors!"] call RE;
-[nil,nil,rHINT,"The helicopter has been taken by survivors!"] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
