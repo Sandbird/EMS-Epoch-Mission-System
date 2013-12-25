@@ -22,8 +22,6 @@ _coords = [_coord1, _coord2, _coord3, _coord4, _coord5, _coord6, _coord7, _coord
 
 //Mission start
 [nil,nil,rTitleText,"A C-130 has crash landed!Survivors secure the cargo!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A C-130 has crash landed!Survivors secure the cargo!"] call RE;
-[nil,nil,rHINT,"A C-130 has crash landed!Survivors secure the cargo!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -34,6 +32,7 @@ c130wreck = createVehicle ["C130J_wreck_EP1",[(_coords select 0) + 30, (_coords 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 10, _coords select 1,0],[], 0, "NONE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
 _crate setVariable ["permaloot",true];
+
 _crate2 = createVehicle ["USVehicleBox",[(_coords select 0) - 10, (_coords select 1) - 10,0],[], 0, "NONE"];
 [_crate2] execVM "\z\addons\dayz_server\missions\misc\fillBoxes1.sqf";
 _crate2 setVariable ["permaloot",true];
@@ -51,8 +50,6 @@ waitUntil{{isPlayer _x && _x distance c130wreck < 30  } count playableunits > 0}
 
 //Mission completed
 [nil,nil,rTitleText,"Survivors secured the crash site! We'll done.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Survivors secured the crash site! We'll done."] call RE;
-[nil,nil,rHINT,"Survivors secured the crash site! We'll done."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
