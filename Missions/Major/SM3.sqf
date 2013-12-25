@@ -10,8 +10,6 @@ _coords = [getMarkerPos "center",0,5500,50,0,20,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"Bandits have set up a medical re-supply camp! Check your map for the location!", "PLAIN",10] call RE;
-[nil,nil,rGlobalRadio,"Bandits have set up a medical re-supply camp! Check your map for the location!"] call RE;
-[nil,nil,rHINT,"Bandits have set up a medical re-supply camp! Check your map for the location!"] call RE;
 
 Ccoords = _coords;
 publicVariable "Ccoords";
@@ -21,9 +19,9 @@ _baserunover = createVehicle ["land_fortified_nest_big",[(_coords select 0) - 20
 _baserunover2 = createVehicle ["Land_Fort_Watchtower",[(_coords select 0) - 10, (_coords select 1) + 10,-0.2],[], 0, "CAN_COLLIDE"];
 _hummer = createVehicle ["HMMWV_DZ",[(_coords select 0) + 25, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
 
-_baserunover2 setVariable ["DZAI",1,true];
-_baserunover setVariable ["DZAI",1,true];
-_hummer setVariable ["DZAI",1,true];
+_baserunover2 setVariable ["Sarge",1,true];
+_baserunover setVariable ["Sarge",1,true];
+_hummer setVariable ["Sarge",1,true];
 
 _crate = createVehicle ["USVehicleBox",[(_coords select 0) + 5, (_coords select 1),0],[], 0, "CAN_COLLIDE"];
 [_crate] execVM "\z\addons\dayz_server\missions\misc\fillBoxesM.sqf";
@@ -44,8 +42,6 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits >
 
 //Mission completed
 [nil,nil,rTitleText,"Survivors have taken control of the camp and medical supplies.", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Survivors have taken control of the camp and medical supplies."] call RE;
-[nil,nil,rHINT,"Survivors have taken control of the camp and medical supplies."] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
