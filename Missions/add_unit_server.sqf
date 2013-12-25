@@ -89,7 +89,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                   case 1: {["M24","5Rnd_762x51_M24"]};
                   case 2: {["M24_des_EP1","5Rnd_762x51_M24"]};
                   case 3: {["SVD","10Rnd_762x54_SVD"]};
-			      case 4: {["AK_107_pso","30Rnd_545x39_AK"]};
+		  case 4: {["AK_107_pso","30Rnd_545x39_AK"]};
                 };
             };
         };
