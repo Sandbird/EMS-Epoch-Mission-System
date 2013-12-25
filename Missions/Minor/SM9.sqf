@@ -9,8 +9,6 @@ _coords =  [getMarkerPos "center",0,7000,10,0,20,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"Hillbillies have moved into the area!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Hillbillies have moved into the area!"] call RE;
-[nil,nil,rHINT,"Hillbillies have moved into the area!"] call RE;
 
 MCoords = _coords;
 publicVariable "MCoords";
@@ -60,8 +58,6 @@ waitUntil{{isPlayer _x && _x distance baserunover < 30  } count playableunits > 
 
 //Mission completed
 [nil,nil,rTitleText,"Survivors killed all Hillies! Loot their corpses!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Survivors killed all Hillies! Loot their corpses!"] call RE;
-[nil,nil,rHINT,"Survivors killed all Hillies! Loot their corpses!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
