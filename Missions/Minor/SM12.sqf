@@ -8,15 +8,13 @@ _coords = [getMarkerPos "center",0,7000,10,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission start
 [nil,nil,rTitleText,"A truck has crashed! Kill any survivors and secure the loot!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"A truck has crashed! Kill any survivors and secure the loot!"] call RE;
-[nil,nil,rHINT,"A truck has crashed! Kill any survivors and secure the loot!"] call RE;
 
 MCoords = _coords;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
 uralcrash = createVehicle ["uralwreck",_coords,[], 0, "CAN_COLLIDE"];
-uralcrash setVariable ["DZAI",1,true];
+uralcrash setVariable ["Sarge",1,true];
 
 [_coords,40,4,3,0] execVM "\z\addons\dayz_server\Missions\add_unit_server4.sqf";//AI Guards
 sleep 1;
@@ -59,8 +57,6 @@ sleep 1;
 
 //Mission completed
 [nil,nil,rTitleText,"Crashed Truck secured by survivors!", "PLAIN",6] call RE;
-[nil,nil,rGlobalRadio,"Crashed Truck secured by survivors!"] call RE;
-[nil,nil,rHINT,"Crashed Truck secured by survivors!"] call RE;
 
 [] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
