@@ -37,7 +37,6 @@ sleep 1;
 [_coords,40,4,3,0] execVM "\z\addons\dayz_server\Missions\add_unit_server.sqf";//AI Guards
 sleep 1;
 
-
 waitUntil{{isPlayer _x && _x distance _uralcrash < 30  } count playableunits > 0}; 
 
 //Mission accomplished
