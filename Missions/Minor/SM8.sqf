@@ -50,7 +50,6 @@ tentloot addMagazineCargoGlobal ["30Rnd_9x19_MP5", 5];
 tentloot addMagazineCargoGlobal ["glock17_EP1", 2];
 tentloot addMagazineCargoGlobal ["17Rnd_9x19_glock17", 4];
 
-
 waitUntil{{isPlayer _x && _x distance tentloot < 30  } count playableunits > 0}; 
 
 [] execVM "debug\remmarkers75.sqf";
