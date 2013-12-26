@@ -10,8 +10,7 @@ Notes:
 Version 0.2.3 is strictly a platform change and bug fix release. No new features have been added.
 This is the 2nd release using the GitHub development platform.
 
-Development on this project is currently done by TheFuchs and MimiC.
-
+Development on this project is currently done by TheFuchs .
 * [FIXED] added waTTe's markerfix THX
 * [FIXED] permaloot variable added for boxes
 * [FIXED] Completion text in mission Major/Minor wasn't correct
