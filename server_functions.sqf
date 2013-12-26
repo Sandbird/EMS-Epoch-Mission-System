@@ -31,7 +31,7 @@ server_spawnEvents =		compile preprocessFileLineNumbers "\z\addons\dayz_server\c
 
 fnc_plyrHit   =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
-fnc_hTime = compile preprocessFile "\z\addons\dayz_server\Missions\misc\fnc_hTime.sqf"; //Random integer selector for mission wait time
+fnc_hTime = compile preprocessFile "\z\addons\dayz_server\EMS\misc\fnc_hTime.sqf"; //Random integer selector for mission wait time
 
 
 vehicle_handleInteract = {
@@ -604,9 +604,9 @@ dayz_recordLogin = {
   MissionGoMinor = 0;
 if (isServer) then {
 SMarray = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SM11","SM12","SM13"];
-[] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf";                                                 //Starts major mission system
+[] execVM "\z\addons\dayz_server\EMS\major\SMfinder.sqf";                                                 //Starts major mission system
 SMarray2 = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SM11","SM12","SM13"];
-[] execVM "\z\addons\dayz_server\missions\minor\SMfinder.sqf";                                                 //Starts minor mission system
+[] execVM "\z\addons\dayz_server\EMS\minor\SMfinder.sqf";                                                 //Starts minor mission system
 };
 //---------EndInitMissions------//
 
