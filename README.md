@@ -46,7 +46,7 @@ Copy the <b>Missions</b> folder from the EMS download ,paste and place the conte
 
 <b>Add this after it:</b>
 
-    fnc_hTime = compile preprocessFile "\z\addons\dayz_server\Missions\misc\fnc_hTime.sqf"; //Random integer selector for mission wait time
+    fnc_hTime = compile preprocessFile "\z\addons\dayz_server\EMS\misc\fnc_hTime.sqf"; //Random integer selector for mission wait time
 
 <b>Around line 540 look for this:</b>
 	
@@ -66,9 +66,9 @@ Copy the <b>Missions</b> folder from the EMS download ,paste and place the conte
     MissionGoMinor = 0;
     if (isServer) then { 
       SMarray = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SM11","SM12","SM13"];
-      [] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf"; //Starts major mission system
+      [] execVM "\z\addons\dayz_server\EMS\major\SMfinder.sqf"; //Starts major mission system
       SMarray2 = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SM11","SM12","SM13"];
-      [] execVM "\z\addons\dayz_server\missions\minor\SMfinder.sqf"; //Starts minor mission system
+      [] execVM "\z\addons\dayz_server\EMS\minor\SMfinder.sqf"; //Starts minor mission system
     };
     //---------EndInitMissions------//
 
@@ -90,7 +90,7 @@ Copy the <b>Missions</b> folder from the EMS download ,paste and place the conte
 
     if (!_parachuteWest and !(locked _object)) then {
     //if (_objectID == "0" && _uid == "0") then
-      if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] != 1)) then
+    if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] != 1)) then
 
 <b>Edit server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
 
