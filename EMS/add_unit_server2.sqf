@@ -60,10 +60,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Sa61_EP1"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD"]};
+                  case 1: {["M24","5Rnd_762x51_M24"]};
+                  case 2: {["M40A3","5Rnd_762x51_M24"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
                 };
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
@@ -74,10 +74,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1""]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["G36_C_SD_camo","30Rnd_556x45_StanagSD","Sa61_EP1"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD"]};
+                  case 1: {["M24","5Rnd_762x51_M24"]};
+                  case 2: {["M40A3","5Rnd_762x51_M24"]};
+                  case 3: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
                 };
             };
             if (x > 3) then //troops soldiers
@@ -88,10 +88,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 _ailoadout=
                 switch (_rndLOut) do
                 {
-                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD","Sa61_EP1"]};
-                  case 1: {["M24","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 2: {["M40A3","5Rnd_762x51_M24","Sa61_EP1"]};
-                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug","Sa61_EP1"]};
+                  case 0: {["SVD_CAMO","10Rnd_762x54_SVD"]};
+                  case 1: {["M24","5Rnd_762x51_M24"]};
+                  case 2: {["M40A3","5Rnd_762x51_M24"]};
+                  case 3: {["Remington870_lamp","8Rnd_B_Beneli_74Slug"]};
                 };
             };
         };
