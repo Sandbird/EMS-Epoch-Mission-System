@@ -14,7 +14,6 @@ _coords = [getMarkerPos "center",0,5500,30,0,20,0] call BIS_fnc_findSafePos;
 Ccoords = _coords;
 publicVariable "Ccoords";
 [] execVM "debug\addmarkers.sqf";
-[] execVM "scripts\beep.sqf";
 
 _uralcrash = createVehicle ["UralWreck",_coords,[], 0, "CAN_COLLIDE"];
 _uralcrash setVariable ["Sarge",1,true];
