@@ -1,4 +1,4 @@
 //Created by Falcyn [QF]
-_wait = [1000,500] call fnc_hTime;
+_wait = [500,1000] call fnc_hTime;
 sleep _wait;
 MissionGo = 1;
