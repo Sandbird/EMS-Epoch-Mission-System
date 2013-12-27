@@ -73,7 +73,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
                 {
                   case 0: {["M249_DZ","200Rnd_556x45_M249"]};
                   case 1: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
-                  case 2: {["G36_C_SD_camo","30Rnd_556x45_StanagSD"]};
+                  case 2: {["FN_FAL","20Rnd_762x51_FNFAL"]};
                 };
             };
             if (x > 3) then //troops soldiers
