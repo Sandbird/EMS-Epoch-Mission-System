@@ -9,7 +9,7 @@ _crate addMagazineCargoGlobal ["bulk_empty", 25];
 _crate addMagazineCargoGlobal ["CinderBlocks", 25];
 _crate addMagazineCargoGlobal ["MortarBucket", 25];
 _crate addMagazineCargoGlobal ["PartPlywoodPack", 25];
-_crate addMagazineCargoGlobal ["PartLumberPack", 25];
+_crate addMagazineCargoGlobal ["PartPlankPack", 25];
 _crate addMagazineCargoGlobal ["ItemCanvas", 25];
 _crate addMagazineCargoGlobal ["PartGeneric", 25];
 _crate addMagazineCargoGlobal ["ItemSandbag", 25];
