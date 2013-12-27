@@ -1,4 +1,4 @@
-## [EMS] Epoch Mission System (Let their bodies hit the floor)
+## [EMS] Epoch Mission System 
 ### Version 0.2.6 [WIP] Work in Progress
 
 _Credits: Lazyink, TheSzerdi, Falcyn , TAWTonic, EPOCH DEV's<br>
@@ -9,6 +9,8 @@ Merged DayZ Mission System's from TheSzerdi and Lazyink with permission._
 
 Epoch Mission System ( EMS ) is a modified version of Lazyink & TheSzerdi's DayZ Mission System. The two projects were merged by Fuchs and released with some SargeAI configs to enhance the gameplay of Epoch Chernarus servers. The project was then renamed to "Epoch Mission System" after MimiC joined Fuchs and further development was done on it. It has now been released as a new project, with a total of 26 unique missions that are specific to Epoch servers.
 The Sarge AI conig has been removed.
+
+(Let their bodies hit the floor)
 
 _This mission system will not work properly on non-Epoch servers or servers that do not have DZAI already installed._
 
