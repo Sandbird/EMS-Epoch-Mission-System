@@ -40,7 +40,7 @@ _aispawn = [[(_coords select 0) + 20, _coords select 1,0],40,4,4,1] execVM "\z\a
 sleep 5;
 _aispawn = [[(_coords select 0) + 30, _coords select 1,0],40,4,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance _c130wreck < 30 } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _c130wreck < 60  } count playableunits > 0}; 
 
 //Mission completed
 [nil,nil,rTitleText,"The crash site has been secured by survivors!", "PLAIN",6] call RE;
