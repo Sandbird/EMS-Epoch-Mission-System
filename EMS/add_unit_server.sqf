@@ -56,7 +56,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
                 switch (_rndLOut) do
                 {
                   case 0: {["AK_47_M","30Rnd_762x39_AK47"]};
-                  case 1: {["M4A1_RCO_GL","30Rnd_762x39_AK47"]};
+                  case 1: {["M4A1_RCO_GL","30Rnd_556x45_Stanag"]};
                   case 2: {["Sa58P_EP1","30Rnd_762x39_SA58"]};
                   case 3: {["Sa58V_CCO_EP1","30Rnd_762x39_SA58"]};
                   case 4: {["Sa58V_EP1","30Rnd_762x39_SA58"]};
