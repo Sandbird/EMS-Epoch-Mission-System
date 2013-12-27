@@ -4,7 +4,8 @@
 _Credits: Lazyink, TheSzerdi, Falcyn , TAWTonic, EPOCH DEV's<br>
 Merged DayZ Chernarus Mission System's from TheSzerdi and Lazyink with permission._
 
-* THX to Torndeco,waTTe for their help/fixes
+* THX for the permissions from TheSzerdi and Lazyink 
+* THX to Torndeco,waTTe for their help/fixes !!
 
 Epoch Mission System ( EMS ) is a modified version of Lazyink & TheSzerdi's DayZ Chernarus Mission systems. The two projects were merged by Fuchs and released with some SargeAI configs to enhance the gameplay of Epoch Chernarus servers. The project was then renamed to "Epoch Mission System" after MimiC joined Fuchs and further development was done on it. It has now been released as a new project, with a total of 26 unique missions that are specific to Epoch servers.
 The Sarge AI conig has been removed.
