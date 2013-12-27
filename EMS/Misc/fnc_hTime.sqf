@@ -1,23 +1,8 @@
-/*
-  @file Version: 1D
-	@file name: core\misc\fnc_hTime.sqf
-	@file Author: TAW_Tonic
-	@file edit: 9/13/2012
-	@file description: Returns a mid-high integer
-*/
+private["_low_value","_high_value","_rand","_return"];
+_low_value = _this select 0;
+_high_value = _this select 1;
 
-private["_time","_val","_return","_rand","_bool","_tar"];
-_tar = _this select 0;
-_val = _this select 1;
+_rand = round(random (_high_value - _low_value));
+_return = _low_value + _rand;
 
-_rand  = round(random _tar);
-_bool = true;
-
-while {_bool} do
-{
-	if(_rand < _val) then {_rand  = round(random _tar);} else {_bool = false;};
-};
-
-_return = _rand;
-_return;
-
+_return
