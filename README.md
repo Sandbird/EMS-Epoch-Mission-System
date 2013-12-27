@@ -1,4 +1,4 @@
-## Epoch Mission System [EMS]
+## [EMS] Epoch Mission System (Let their bodies hit the floor)
 ### Version 0.2.6 [WIP] Work in Progress
 
 _Credits: Lazyink, TheSzerdi, Falcyn , TAWTonic, EPOCH DEV's<br>
