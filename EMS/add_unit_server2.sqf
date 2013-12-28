@@ -1,5 +1,5 @@
 //Created by Axeman Edited by TheSzerdi
-private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_wpnum","_levelnum","_numunits","_rndLOut","_ailoadout","_wp","_aispawnpos","_aiwep1","_aiammo1","_aiwep2","_aiammo2"];
+private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_wpnum","_levelnum","_numunits","_rndLOut","_ailoadout","_wp","_aispawnpos","_aiwep1","_aiammo1"];
  
     _aiunit = objNull;
     _aiGroup = createGroup EAST;
@@ -122,15 +122,10 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         //add random selection
         _aiwep1 = _ailoadout select 0;
         _aiammo1 = _ailoadout select 1;
-        _aiwep2 = _ailoadout select 2;
-        _aiammo2 = _ailoadout select 3;
         _aiunit addweapon _aiwep1;
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
-        _aiunit addweapon _aiwep2;
-        _aiunit addMagazine _aiammo2;
-        _aiunit addMagazine _aiammo2;
 		removeBackpack _aiunit;
 		_aiunit addBackpack "BAF_AssaultPack_DZ";
 		clearWeaponCargo (unitBackpack _aiunit);

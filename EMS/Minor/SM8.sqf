@@ -42,7 +42,7 @@ tentloot addMagazineCargoGlobal ["ItemPainkiller", 4];
 tentloot addMagazineCargoGlobal ["ItemAntibiotic", 2];
 tentloot addWeaponCargoGlobal ["ItemKnife", 2];
 tentloot addWeaponCargoGlobal ["ItemToolbox", 2];
-tentloot addWeaponCargoGlobal ["ItemMatches", 2];
+tentloot addWeaponCargoGlobal ["ItemMatchbox_DZE", 2];
 tentloot addMagazineCargoGlobal ["ItemBloodbag", 2];
 tentloot addMagazineCargoGlobal ["ItemJerryCan", 2];
 tentloot addMagazineCargoGlobal ["MP5A5", 2];
