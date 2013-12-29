@@ -93,9 +93,10 @@ Copy the <b>Missions</b> folder from the EMS download ,copy and paste the EMS Fo
     if (_object getVariable "Sarge" == 1) exitWith {};
 
     
-   comment this out and add the line below
+   <b>comment this out and add the line below :</b>
    //if (_objectID == "0" && _uid == "0") then
-   <b> if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] != 1)) then </b>?
+   
+    if (_objectID == "0" && _uid == "0" && (vehicle _object getVariable ["Sarge",0] != 1)) then
 
 <b>Edit server_cleanup.fsm</b><br>Located: dayz_server\system\server_cleanup.fsm
 
