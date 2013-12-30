@@ -8,6 +8,8 @@ WaitUntil {MissionGo == 1};
 
 _coords = [getMarkerPos "center",0,5500,30,0,20,0] call BIS_fnc_findSafePos;
 
+diag_log "EMS: Major Mission Created (SM4)";
+
 //Mission start
 [nil,nil,rTitleText,"A bandit supply helicopter has crash landed! Check your map for the location!", "PLAIN",10] call RE;
 
