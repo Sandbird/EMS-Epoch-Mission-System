@@ -5,6 +5,8 @@ private ["_coord1","_coord2","_coord3","_coords","_wait","_dummymarker"];
 [] execVM "\z\addons\dayz_server\EMS\SMGoMinor.sqf";
 WaitUntil {MissionGoMinor == 1};
 
+diag_log "EMS: Minor mission created (SM8)";
+
 //Mission start
 [nil,nil,rTitleText,"A landing party is establishing a beachhead!", "PLAIN",6] call RE;
 
