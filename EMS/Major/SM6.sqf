@@ -6,6 +6,8 @@ private ["_coords","_MainMarker","_wait"];
 
 WaitUntil {MissionGo == 1};
 
+diag_log "EMS: Major Mission Created (SM6)";
+
 _coords = [getMarkerPos "center",0,5500,30,0,2000,0] call BIS_fnc_findSafePos;
 
 //Mission start
