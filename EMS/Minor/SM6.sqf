@@ -6,6 +6,8 @@ WaitUntil {MissionGoMinor == 1};
 
 _coords = [getMarkerPos "center",0,5500,10,0,2000,0] call BIS_fnc_findSafePos;
 
+diag_log "EMS: Minor mission created (SM6)";
+
 //Mission start
 [nil,nil,rTitleText,"A bandit weapons truck has crashed! Check your map for the location!", "PLAIN",10] call RE;
 
