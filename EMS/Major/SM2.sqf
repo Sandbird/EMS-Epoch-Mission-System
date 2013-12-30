@@ -7,6 +7,8 @@ WaitUntil {MissionGo == 1};
 
 _coords = [getMarkerPos "center",0,5600,100,0,20,0] call BIS_fnc_findSafePos;
 
+diag_log "EMS: Major mission created (SM2)";
+
 //Mission start
 [nil,nil,rTitleText,"A C-130 carrying medical supplies has crashed and bandits are securing the site! Check your map for the location!", "PLAIN",10] call RE;
 

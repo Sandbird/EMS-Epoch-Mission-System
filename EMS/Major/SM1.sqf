@@ -7,6 +7,8 @@ WaitUntil {MissionGo == 1};
 
 _coords = [getMarkerPos "center",0,5500,100,0,20,0] call BIS_fnc_findSafePos;
 
+diag_log "EMS: Major mission created (SM1)";
+
 //Mission start
 [nil,nil,rTitleText,"Bandits have discovered a weapons cache! Check your map for the location!", "PLAIN",10] call RE;
 

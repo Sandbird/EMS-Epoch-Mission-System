@@ -6,6 +6,8 @@ WaitUntil {MissionGoMinor == 1};
 
 _coords = [getMarkerPos "center",0,7000,2,0,2000,0] call BIS_fnc_findSafePos;
 
+diag_log "EMS: Minor mission created (SM13)";
+
 //Mission start
 [nil,nil,rTitleText,"A psychotic axe murderer has escaped from the hospital!", "PLAIN",6] call RE;
 

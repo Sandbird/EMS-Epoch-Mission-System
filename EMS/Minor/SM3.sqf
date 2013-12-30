@@ -7,6 +7,8 @@ publicVariable "MissionGoMinor";
 
 _coords =  [getMarkerPos "center",0,5000,10,0,20,0] call BIS_fnc_findSafePos;
 
+diag_log "EMS: Minor mission created (SM3)";
+
 //Mission start
 [nil,nil,rTitleText,"A group of bandits have set up a stash house! Check your map for the location!", "PLAIN",10] call RE;
 
