@@ -27,7 +27,6 @@ _baserunover setVariable ["Sarge",1,true];
 _baserunover2 setVariable ["Sarge",1,true];
 _baserunover3 setVariable ["Sarge",1,true];
 _hummer setVariable ["Sarge",1,true];
-_hummer1 setVariable ["Sarge",1,true];
 _hummer2 setVariable ["Sarge",1,true];
 _hummer3 setVariable ["Sarge",1,true];
 
