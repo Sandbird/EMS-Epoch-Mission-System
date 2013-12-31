@@ -39,7 +39,7 @@ _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2.sqf";//AI Guards
 
-waitUntil{{isPlayer _x && _x distance box < 30  } count playableunits > 0}; 
+waitUntil{{isPlayer _x && _x distance _crate < 30  } count playableunits > 0}; 
 
 //Mission completed
 [nil,nil,rTitleText,"Gear cache cleared by survivors, nice work, enjoy the spoils.", "PLAIN",6] call RE;
