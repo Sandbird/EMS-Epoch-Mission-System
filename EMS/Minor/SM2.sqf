@@ -22,7 +22,7 @@ _baserunover2 = createVehicle ["MASH_EP1",[(_coords select 0) - 17, (_coords sel
 _baserunover3 = createVehicle ["MASH_EP1",[(_coords select 0) - 10, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
 _baserunover4 = createVehicle ["UAZ_Unarmed_UN_EP1",[(_coords select 0) + 10, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
 _baserunover5 = createVehicle ["HMMWV_DZ",[(_coords select 0) + 15, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
-_baserunover6 = createVehicle ["SUV_DZ",[(_coords select 0) + 25, (_coords select 1) - 15,0],[], 0, "CAN_COLLIDE"];
+_baserunover6 = createVehicle ["SUV_Camo",[(_coords select 0) + 25, (_coords select 1) - 15,0],[], 0, "CAN_COLLIDE"];
 
 _baserunover setVariable ["Sarge",1,true];
 _baserunover1 setVariable ["Sarge",1,true];
