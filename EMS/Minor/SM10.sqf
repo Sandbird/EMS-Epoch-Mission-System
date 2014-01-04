@@ -66,4 +66,4 @@ MCoords = 0;
 publicVariable "MCoords";
 
 SM1 = 5;
-[0] execVM "\z\addons\dayz_server\missions\EMS\SMfinder.sqf";
+[0] execVM "\z\addons\dayz_server\missions\EMS\minor\SMfinder.sqf";
