@@ -127,7 +127,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
 		removeBackpack _aiunit;
-		_aiunit addBackpack "BAF_AssaultPack_DZ";
+		_aiunit addBackpack "DZ_GunBag_EP1";
 		clearWeaponCargo (unitBackpack _aiunit);
 		clearMagazineCargo (unitBackpack _aiunit);
       //add some garbage
