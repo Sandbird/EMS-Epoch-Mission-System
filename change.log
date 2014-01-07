@@ -1,14 +1,13 @@
 =======================================
 ======== Epoch Mission System  ========
-====== Rolling Change Log: 0.2.5 ======
+====== Rolling Change Log: 0.2.6 ======
 =======================================
 
-Release version: 0.2.5
-Release date: Dec 23, 2013
+Release version: 0.2.6
+Release date: Jan 7, 2014
 
 Notes: 
-Version 0.2.3 is strictly a platform change and bug fix release. No new features have been added.
-This is the 2nd release using the GitHub development platform.
+Version 0.2.6 
 
 Development on this project is currently done by TheFuchs .
 * [FIXED] added waTTe's markerfix THX
@@ -19,6 +18,7 @@ Development on this project is currently done by TheFuchs .
 * [UPDATED] Changed Major\SM9.sqf and Major\SM13.sqf to construction missions with high value construction loot as the reward
 * [UPDATED] Reorganized loot tables for mission rewards
 * [UPDATED] Reduced loot quantity on mission rewards
+* [UPDATED] Added support for all maps 
 * [REMOVED] AK SD ammunition from loot tables
 * [REMOVED] DZAI variable replaced to Sarge
 * [REMOVED] not needed add_unit_server.sqf's
