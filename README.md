@@ -129,7 +129,7 @@ Go to your <b>init.sqf</b> file paste the following block of code below the Ligh
     if (!isServer) then {
     [] execVM "debug\addmarkers.sqf";
     [] execVM "debug\addmarkers75.sqf";
-    
+    };
 
 This will make the mission markers show up on the map for players that have died and respawn, or connect to the server after a mission has already spawned.
 
