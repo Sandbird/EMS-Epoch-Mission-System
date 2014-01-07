@@ -120,11 +120,16 @@ Copy the <b>debug</b> folder from the EMS download to the root of your mission f
 
 <b>Edit your init.sqf file</b>
 
-At the very end of you <b>init.sqf</b> file paste the following block of code:
+Go to your <b>init.sqf</b> file paste the following block of code below the Lights:
+
+   //Lights
+   //[21,04,false,true,false,50,200,300,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 
     // Mission System Markers
+    if (!isServer) then {
     [] execVM "debug\addmarkers.sqf";
     [] execVM "debug\addmarkers75.sqf";
+    
 
 This will make the mission markers show up on the map for players that have died and respawn, or connect to the server after a mission has already spawned.
 
