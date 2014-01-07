@@ -100,7 +100,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
         _aiunit enableAI "FSM";
         _aiunit allowDammage true;
 		
-		_aiunit addEventHandler ['killed',{_this execVM "\z\addons\dayz_server\EMS\bodyclean.sqf"}]; //Body disappear time
+	_aiunit addEventHandler ['killed',{_this execVM "\z\addons\dayz_server\EMS\bodyclean.sqf"}]; //Body disappear time
  
         _aiunit setCombatMode "RED";
         _aiunit setBehaviour "COMBAT";
