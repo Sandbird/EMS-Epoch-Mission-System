@@ -38,7 +38,7 @@ _aispawn = [[(_coords select 0) + 2, _coords select 1,0],40,4,4,1] execVM "\z\ad
 waitUntil{{isPlayer _x && _x distance c130wreck < 30  } count playableunits > 0}; 
 
 //Mission completed
-[nil,nil,rTitleText,"Survivors secured the crash site! We'll done.", "PLAIN",6] call RE;
+[nil,nil,rTitleText,"Survivors secured the C130 crash site! We'll done.", "PLAIN",6] call RE;
 
 [] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
