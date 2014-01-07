@@ -8,8 +8,11 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wpradius","_wpnum","_
     _wpnum = _this select 2;
     _numunits = _this select 1;
     _levelnum = _this select 2;
+    
 	LandingParty = createGroup EAST;
 	publicVariable "LandingParty";
+	_baserunover2 = createGroup EAST;
+	publicVariable "_baserunover2";
  
     _xpos = _aispawnpos select 0;
     _ypos = _aispawnpos select 1;
@@ -116,7 +119,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wpradius","_wpnum","_
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
-		_aiunit removeWeapon "ItemRadio","NVGoggles";
+	_aiunit removeWeapon "ItemRadio","NVGoggles";
       //add some garbage
         if (x == 1) then {
         _aiunit addMagazine "SmokeShellGreen";
