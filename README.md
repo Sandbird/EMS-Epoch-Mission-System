@@ -1,5 +1,5 @@
 ## [EMS] Epoch Mission System 
-### Version 0.2.6 [WIP] Work in Progress
+### Version 0.2.6 
 
 _Credits: Lazyink, TheSzerdi, Falcyn , TAWTonic, EPOCH DEV's<br>
 Merged DayZ Mission System's from TheSzerdi and Lazyink with permission._
