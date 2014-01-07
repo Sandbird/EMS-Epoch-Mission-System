@@ -112,7 +112,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         _aiunit enableAI "FSM";
         _aiunit allowDammage true;
 		
-		_aiunit addEventHandler ['killed',{_this execVM "\z\addons\dayz_server\EMS\bodyclean.sqf"}]; //Body disappear time
+	_aiunit addEventHandler ['killed',{_this execVM "\z\addons\dayz_server\EMS\bodyclean.sqf"}]; //Body disappear time
  
         _aiunit setCombatMode "RED";
         _aiunit setBehaviour "COMBAT";
@@ -126,10 +126,12 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
         _aiunit addMagazine _aiammo1;
-		removeBackpack _aiunit;
-		_aiunit addBackpack "DZ_GunBag_EP1";
-		clearWeaponCargo (unitBackpack _aiunit);
-		clearMagazineCargo (unitBackpack _aiunit);
+        
+	removeBackpack _aiunit;
+	_aiunit addBackpack "DZ_GunBag_EP1";
+	clearWeaponCargo (unitBackpack _aiunit);
+	clearMagazineCargo (unitBackpack _aiunit);
+	
       //add some garbage
         if (x == 1) then {
         _aiunit addMagazine "SmokeShellGreen";
