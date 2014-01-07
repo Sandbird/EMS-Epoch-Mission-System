@@ -1,7 +1,7 @@
 //Helicopter Mission Created by TheSzerdi Edited by Falcyn [QF]
 //Edited for EMS by Fuchs
 
-private ["_coords","_dummymarker","_chopper","_wait","_coords"];
+private ["_coords","_dummymarker","_chopper","_wait"];
 [] execVM "\z\addons\dayz_server\EMS\SMGoMajor.sqf";
 WaitUntil {MissionGo == 1};
 
