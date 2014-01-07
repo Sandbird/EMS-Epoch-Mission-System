@@ -23,7 +23,7 @@ _crate = createVehicle ["USVehicleBox",[(_coords select 0) - 10, _coords select 
 _crate setVariable ["permaLoot",true];
 
 _crate2 = createVehicle ["USVehicleBox",[(_coords select 0) - 10, (_coords select 1) - 10,0],[], 0, "NONE"];
-[_crate2] execVM "\z\addons\dayz_server\EMS\misc\fillBoxes1.sqf";
+[_crate2] execVM "\z\addons\dayz_server\EMS\misc\fillBoxesM.sqf";
 _crate2 setVariable ["permaloot",true];
 
 
