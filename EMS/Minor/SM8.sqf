@@ -8,22 +8,29 @@ WaitUntil {MissionGoMinor == 1};
 diag_log "EMS: Minor mission created (SM8)";
 
 //Mission start
-[nil,nil,rTitleText,"A landing party is establishing a beachhead!", "PLAIN",6] call RE;
+[nil,nil,rTitleText,"A  Bandit Outpost has been spotted, clear it!", "PLAIN",6] call RE;
 
-_coords = [getMarkerPos "center",0,5000,50,0,20,0] call BIS_fnc_findSafePos;
+_coords = [getMarkerPos "center",0,2500,50,0,20,0] call BIS_fnc_findSafePos;
 
 MCoords = _coords select 1;
 publicVariable "MCoords";
 [] execVM "debug\addmarkers75.sqf";
 
-pbxride = createVehicle ["PBX",_coords select 0,[], 0, "NONE"];
-pbxride setVariable ["Sarge",1,true];
-pbxride setFuel 1;
+_base = ["land_fortified_nest_big","Land_Fort_Watchtower"] call BIS_fnc_selectRandom;
+_baserunover = createVehicle [_base,[(_coords select 0) - 20, (_coords select 1) - 10,-0.2],[], 0, "NONE"];
+_baserunover2 = createVehicle ["land_fortified_nest_big",[(_coords select 0) - 20, (_coords select 1) - 10,-0.2],[], 0, "CAN_COLLIDE"];
+_baserunover setVariable ["Sarge",1,true];
+_baserunover2 setVariable ["Sarge",1,true];
+
+_hummer = createVehicle ["HMMWV_DZ",[(_coords select 0) - 20, (_coords select 1) - 5,0],[], 0, "CAN_COLLIDE"];
+_hummer setVariable ["Sarge",1,true];
+_hummer setFuel 1;
 
 [_coords select 0,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server3.sqf";//AI Guards
 sleep 3;
-LandingParty addVehicle pbxride;
-LandingParty move (_coords select 1);
+
+Outpost addVehicle pbxride;
+Outpost move (_coords select 1);
 waitUntil{(pbxride distance (_coords select 1)) < 50}; 
 
 tentloot = createVehicle ["TentStorage",_coords select 1,[], 0, "NONE"];
@@ -56,7 +63,7 @@ MCoords = 0;
 publicVariable "MCoords";
 
 //Mission accomplished
-[nil,nil,rTitleText,"You've secured the beachhead! Good work.", "PLAIN",6] call RE;
+[nil,nil,rTitleText,"You've secured the Outpost! Good work.", "PLAIN",6] call RE;
 
 SM1 = 1;
 [0] execVM "\z\addons\dayz_server\EMS\minor\SMfinder.sqf";
