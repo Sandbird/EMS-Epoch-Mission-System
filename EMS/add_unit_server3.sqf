@@ -149,3 +149,13 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_levelnum","_numunits"
         _aiunit setSkill ["general",1];
         //sleep 0.5;
     };
+    //generate waypoints
+    for [{ x=1 },{ x < _wpnum },{ x = x + 1; }] do {
+    _wppos = [_xpos+(x*20),_ypos+(x*20),_wpradius];
+    _wp = _aiGroup addWaypoint [_wppos, _wpradius];
+    _wp setWaypointType "MOVE";
+    };
+    _wp = _aiGroup addWaypoint [[_xpos,_ypos,0], _wpradius];
+    _wp setWaypointType "CYCLE";
+ 
+    diag_log format ["AIUNIT: Last Waypoint %1 at %2",_wp,_wppos];
