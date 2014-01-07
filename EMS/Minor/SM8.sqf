@@ -29,9 +29,9 @@ _hummer setFuel 1;
 [_coords select 0,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server3.sqf";//AI Guards
 sleep 3;
 
-Outpost addVehicle pbxride;
+Outpost addVehicle _baserunover2;
 Outpost move (_coords select 1);
-waitUntil{(pbxride distance (_coords select 1)) < 50}; 
+waitUntil{{isPlayer _x && _x distance _baserunover2 < 30  } count playableunits > 0};
 
 tentloot = createVehicle ["TentStorage",_coords select 1,[], 0, "NONE"];
 tentloot setVariable ["permaLoot",true];
