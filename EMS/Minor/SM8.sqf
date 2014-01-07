@@ -1,7 +1,7 @@
 //Landing party sidemission Created by TheSzerdi Edited by Falcyn [QF]
 //Edited by Fuchs
 
-private ["_coord1","_coord2","_coord3","_coords","_wait","_dummymarker"];
+private ["_coords","_wait","_dummymarker"];
 [] execVM "\z\addons\dayz_server\EMS\SMGoMinor.sqf";
 WaitUntil {MissionGoMinor == 1};
 
@@ -10,11 +10,7 @@ diag_log "EMS: Minor mission created (SM8)";
 //Mission start
 [nil,nil,rTitleText,"A landing party is establishing a beachhead!", "PLAIN",6] call RE;
 
-_coord1 =[[7871.2979, 3066.8784,0],[7813.6245, 3113.5232,0]];
-_coord2 =[[7785.7861, 3124.6489,0],[7690.1489, 3114.0837,0]];
-_coord3 =[[7661.8218, 3099.8113,0],[7597.4658, 3051.6685,0]];
-
-_coords = [_coord1, _coord2, _coord3] call BIS_fnc_selectRandom;
+_coords = [getMarkerPos "center",0,5000,50,0,20,0] call BIS_fnc_findSafePos;
 
 MCoords = _coords select 1;
 publicVariable "MCoords";
