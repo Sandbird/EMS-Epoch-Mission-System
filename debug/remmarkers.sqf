@@ -1,1 +1,1 @@
-deleteMarker "_MainMarker";
+deleteMarker "MainMarker";
