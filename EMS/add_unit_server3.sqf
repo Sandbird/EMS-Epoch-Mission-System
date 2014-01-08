@@ -11,8 +11,8 @@
     _levelnum = _this select 4;    
     LandingParty = createGroup EAST;
     publicVariable "LandingParty";
-     _baserunover2 = createGroup EAST;
-     publicVariable "_baserunover2";
+    _baserunover2 = createGroup EAST;
+    publicVariable "_baserunover2";
  
     _xpos = _aispawnpos select 0;
     _ypos = _aispawnpos select 1;
