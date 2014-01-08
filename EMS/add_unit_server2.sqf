@@ -8,10 +8,12 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
     _wpnum = _this select 2;
     _numunits = _this select 3;
     _levelnum = _this select 4;
-	SniperTeam = createGroup EAST;
+	
 	AxeMurderer = createGroup EAST;
-	publicVariable "SniperTeam";
 	publicVariable "AxeMurderer";
+	SniperTeam = createGroup EAST;
+	publicVariable "SniperTeam";
+	
  
     _xpos = _aispawnpos select 0;
     _ypos = _aispawnpos select 1;
