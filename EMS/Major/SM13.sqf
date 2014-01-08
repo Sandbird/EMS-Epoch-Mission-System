@@ -1,7 +1,7 @@
 // Construction Mission Created by TheSzerdi
 //Edited for EMS by Fuchs
 
-private ["_coords","_dummymarker","_wait","_coords"];
+private ["_coords","_dummymarker","_wait"];
 [] execVM "\z\addons\dayz_server\EMS\SMGoMajor.sqf";
 WaitUntil {MissionGo == 1};
 
