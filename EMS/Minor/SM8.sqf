@@ -1,4 +1,4 @@
-//Landing party sidemission Created by TheSzerdi Edited by Falcyn [QF]
+//Outpost sidemission Created by TheSzerdi Edited by Falcyn [QF]
 //Edited by Fuchs
 
 private ["_coords","_wait","_dummymarker"];
