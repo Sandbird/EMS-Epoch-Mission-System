@@ -20,7 +20,7 @@ _chopper = ["CH_47F_EP1_DZE","UH1H_DZE"] call BIS_fnc_selectRandom;
 
 hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
 hueychop setVariable ["Sarge",1,true];
-hueychop setFuel 0.25;
+hueychop setFuel 0.50;
 hueychop setVehicleAmmo 0.00;
 
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2.sqf";//AI Guards
