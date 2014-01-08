@@ -1,6 +1,6 @@
 // Major mission marker
 while{MissionGo == 1} do { //refresh marker script by *hs-s.com | waTTe - www.banditparty.de
-	_MainMarker = createMarker ["MainMarker", Ccoords];
+	_MainMarker = createMarker ["_MainMarker", Ccoords];
 	_MainMarker setMarkerColor "ColorRed";	//Set the color of the marker
 	_MainMarker setMarkerShape "ELLIPSE";	//Set the shape of the marker
 	_MainMarker setMarkerBrush "Grid";	//Set the style of the marker
