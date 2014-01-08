@@ -55,7 +55,7 @@
         {
             if (x == 1) then //one troops comander
             {
-                "GUE_Soldier_2_DZ" createUnit [_unitpos, _baserunover2, "_aiunit=this;",1,"LIEUTENANT"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, Outpost, "_aiunit=this;",1,"LIEUTENANT"];
                 _rndLOut=floor(random 7);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -71,7 +71,7 @@
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
             {
-                "GUE_Soldier_2_DZ" createUnit [_unitpos, _baserunover2, "_aiunit=this;",1,"SERGEANT"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, Outpost, "_aiunit=this;",1,"SERGEANT"];
                 _rndLOut=floor(random 3);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -83,7 +83,7 @@
             };
             if (x > 3) then //troops soldiers
             {
-                "GUE_Soldier_2_DZ" createUnit [_unitpos, LandingParty, "_aiunit=this;",1,"CORPORAL"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, Outpost, "_aiunit=this;",1,"CORPORAL"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
