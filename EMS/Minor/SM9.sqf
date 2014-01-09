@@ -11,6 +11,8 @@ diag_log "EMS: Minor mission created (SM9)";
 
 //Mission start
 [nil,nil,rTitleText,"Hillbillies have moved into the area!", "PLAIN",6] call RE;
+_nul = [objNull, player, rSAY, "hillbilly"] call RE;
+[] execVM "debug\hillbilly.sqf";
 
 MCoords = _coords;
 publicVariable "MCoords";
@@ -53,8 +55,6 @@ if (isDedicated) then {
 		};
 	};
 };
-
-[] execVM "debug\hillbilly.sqf";
 
 waitUntil{{isPlayer _x && _x distance baserunover < 30  } count playableunits > 0}; 
 
