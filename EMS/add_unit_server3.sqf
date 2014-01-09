@@ -8,7 +8,8 @@
     _wpradius = _this select 1;
     _wpnum = _this select 2;
     _numunits = _this select 3;
-    _levelnum = _this select 4;    
+    _levelnum = _this select 4;
+    
     LandingParty = createGroup EAST;
     publicVariable "LandingParty";
     _baserunover2 = createGroup EAST;
