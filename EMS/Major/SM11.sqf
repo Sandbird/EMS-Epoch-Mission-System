@@ -20,7 +20,7 @@ _chopper = ["HMMWV_Ambulance_CZ_DES_EP1","HMMWV_M1151_M2_CZ_DES_EP1"] call BIS_f
 
 hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
 hueychop setVariable ["Sarge",1,true];
-hueychop setFuel 0.55;
+hueychop setFuel 0.50;
 hueychop setVehicleAmmo 0.00;
 
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\EMS\add_unit_server.sqf";//AI Guards
