@@ -21,7 +21,7 @@ _chopper = ["UH1H_DZE","Mi17_DZE"] call BIS_fnc_selectRandom;
 
 _hueychop = createVehicle [_chopper,_coords,[], 0, "NONE"];
 _hueychop setVariable ["Sarge",1,true];
-_hueychop setFuel 0.55;
+_hueychop setFuel 0.50;
 _hueychop setVehicleAmmo 0.00;
 
 _crate2 = createVehicle ["USLaunchersBox",[(_coords select 0) - 6, _coords select 1,0],[], 0, "CAN_COLLIDE"];
