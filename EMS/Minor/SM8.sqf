@@ -66,4 +66,5 @@ publicVariable "MCoords";
 [nil,nil,rTitleText,"You've secured the Outpost! Good work.", "PLAIN",6] call RE;
 
 SM1 = 1;
+
 [0] execVM "\z\addons\dayz_server\EMS\minor\SMfinder.sqf";

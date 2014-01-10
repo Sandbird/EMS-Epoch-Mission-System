@@ -48,4 +48,5 @@ Ccoords = 0;
 publicVariable "Ccoords";
 
 SM1 = 5;
+
 [0] execVM "\z\addons\dayz_server\EMS\major\SMfinder.sqf";
