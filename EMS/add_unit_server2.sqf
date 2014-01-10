@@ -42,7 +42,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             };
             if ((x == 2) || (x == 4) || (x >= 6)) then //troops snipers
             {
-                "Survivor2_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
+                "GUE_Soldier_Crew_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
                 _rndLOut=floor(random 3);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -57,7 +57,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if (x == 1) then //one troops comander
             {
-                "GUE_Soldier_2_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"LIEUTENANT"];
+                "Sniper1_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"LIEUTENANT"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -71,7 +71,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             };
             if ((x == 2) || (x == 3)) then //troops sergeant
             {
-                "GUE_Soldier_2_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"SERGEANT"];
+                "CZ_Soldier_Sniper_EP1_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"SERGEANT"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -85,7 +85,7 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
             };
             if (x > 3) then //troops soldiers
             {
-                "GUE_Soldier_2_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"CORPORAL"];
+                "GUE_Soldier_Sniper_DZ" createUnit [_unitpos, SniperTeam, "_aiunit=this;",1,"CORPORAL"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -102,11 +102,11 @@ private ["_aiunit","_xpos","_ypos","_unitpos","_aiGroup","_wppos","_wpradius","_
         {
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
-                "Rocker4_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
+                "Bandit1_DZ" createUnit [_unitpos, AxeMurderer, "_aiunit=this;",1,"PRIVATE"];
                 _ailoadout= ["MeleeHatchet_DZE","5Rnd_762x51_M24"]
             };
         };
-        diag_log format ["AIUNIT: Creating GUE_Soldier_2_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
+        diag_log format ["AIUNIT: Creating Bandit1_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
  
         _aiunit enableAI "TARGET";
         _aiunit enableAI "AUTOTARGET";
