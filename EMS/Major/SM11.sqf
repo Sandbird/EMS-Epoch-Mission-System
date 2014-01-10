@@ -5,7 +5,7 @@ private ["_coords","_dummymarker","_chopper","_wait"];
 [] execVM "\z\addons\dayz_server\EMS\SMGoMajor.sqf";
 WaitUntil {MissionGo == 1};
 
-_coords = [getMarkerPos "center",0,3200,100,0,20,0] call BISfnc_findSafePos;
+_coords = [getMarkerPos "center",0,3200,100,0,20,0] call BIS_fnc_findSafePos;
 
 diag_log "EMS: Major Mission Created (SM11)";
 
