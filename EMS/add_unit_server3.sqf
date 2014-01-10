@@ -28,7 +28,7 @@
         {
             if ((x == 1) || (x == 3) || (x == 5)) then //troop soldiers
             {
-                "Bandit1_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
+                "GUE_Soldier_Crew_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
                 _rndLOut=floor(random 4);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -41,7 +41,7 @@
             };
             if ((x == 2) || (x == 4) || (x >= 6)) then //troops snipers
             {
-                "Survivor2_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
+                "GUE_Soldier_Crew_DZ" createUnit [_unitpos, _aiGroup, "_aiunit=this;",1,"PRIVATE"];
                 _rndLOut=floor(random 3);
                 _ailoadout=
                 switch (_rndLOut) do
@@ -84,7 +84,7 @@
             };
             if (x > 3) then //troops soldiers
             {
-                "GUE_Soldier_Crew_DZ" createUnit [_unitpos, Outpost, "_aiunit=this;",1,"CORPORAL"];
+                "GUE_Soldier_2_DZ" createUnit [_unitpos, Outpost, "_aiunit=this;",1,"CORPORAL"];
          
                 _rndLOut=floor(random 4);
                 _ailoadout=
@@ -97,7 +97,7 @@
                 };
             };
         };
-        diag_log format ["AIUNIT: Creating Bandit1_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
+        diag_log format ["AIUNIT: Creating GUE_Soldier_2_DZ by %1 at %2. Result:%3 | Loadout:%4 / Num:%5",player,_unitpos,_aiunit,_ailoadout,_rndLOut];
  
         _aiunit enableAI "TARGET";
         _aiunit enableAI "AUTOTARGET";

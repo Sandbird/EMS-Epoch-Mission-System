@@ -25,7 +25,7 @@ hueychop setVehicleAmmo 0.00;
 
 _aispawn = [_coords,80,6,6,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2.sqf";//AI Guards
 sleep 5;
-_aispawn = [_coords,60,6,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2.sqf";//AI Guards
+_aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2.sqf";//AI Guards
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server2.sqf";//AI Guards
 
