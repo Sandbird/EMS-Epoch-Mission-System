@@ -134,4 +134,4 @@ This will make the mission markers show up on the map for players that have died
 
 <b>Repack your mission PBO using PBO Manager and replace your existing _mission_.pbo file</b>
 
-<b>Next year follows the integration of DayZ Bandit AI ,the current AI will be removed then</b>
+<b>Early 2014 follows the integration of DayZ Bandit AI ,the current AI will be removed then</b>
