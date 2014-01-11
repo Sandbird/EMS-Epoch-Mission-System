@@ -19,7 +19,6 @@ _This mission system will not work properly on non-Epoch servers or servers that
 * Notepad++
 * PBO Manager
 * Epoch 1.0.3.1 Server
-* DZAI 
 
 **Difficulty**
 
