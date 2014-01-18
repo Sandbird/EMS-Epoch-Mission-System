@@ -5,7 +5,7 @@ private ["_coords","_dummymarker","_chopper","_wait"];
 [] execVM "\z\addons\dayz_server\EMS\SMGoMajor.sqf";
 WaitUntil {MissionGo == 1};
 
-_coords = [getMarkerPos "center",0,4500,100,0,20,0] call BIS_fnc_findSafePos;
+_coords = [getMarkerPos "center",0,3800,100,0,20,0] call BIS_fnc_findSafePos;
 
 diag_log "EMS: Major Mission Created (SM12)";
 
@@ -25,7 +25,7 @@ hueychop setVehicleAmmo 0.00;
 
 _aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server.sqf";//AI Guards
 sleep 5;
-_aispawn = [_coords,80,6,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server.sqf";//AI Guards
+_aispawn = [_coords,60,6,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server.sqf";//AI Guards
 sleep 5;
 _aispawn = [_coords,40,4,4,1] execVM "\z\addons\dayz_server\EMS\add_unit_server.sqf";//AI Guards
 
