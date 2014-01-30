@@ -6,6 +6,7 @@ Merged DayZ Mission System's from TheSzerdi and Lazyink with permission._
 
 * THX for the permissions from TheSzerdi and Lazyink 
 * THX to MimiC,Torndeco,waTTe,Mochnant,deadeye2,iFear,umfufu,skynetdev for their help/fixes !!
+* [ATTENTION] Mission Vehicles disappear after a restart , EMS will not support saving them in any way !!
 
 Epoch Mission System ( EMS ) is a modified version of Lazyink & TheSzerdi's DayZ Mission System. The two projects were merged by Fuchs and released with some SargeAI configs to enhance the gameplay of Epoch Chernarus servers. The project was then renamed to "Epoch Mission System" after MimiC joined Fuchs and further development was done on it. It has now been released as a new project, with a total of 26 unique missions that are specific to Epoch servers.
 The Sarge AI conig has been removed.
