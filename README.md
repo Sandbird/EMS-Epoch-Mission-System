@@ -130,8 +130,13 @@ Go to your <b>init.sqf</b> file paste the following block of code below the Ligh
     [] execVM "debug\addmarkers75.sqf";
     };
 
+Understanding  BIS_fnc_findSafePos
+ 
+    http://tactical.nekr...fnc_findsafepos
+
 This will make the mission markers show up on the map for players that have died and respawn, or connect to the server after a mission has already spawned.
 
 <b>Repack your mission PBO using PBO Manager and replace your existing _mission_.pbo file</b>
 
-<b>Early 2014 follows the integration of DayZ Bandit AI ,the current AI will be removed then</b>
+<b>Testing DZAI Integration scheduled for February</b>
+
