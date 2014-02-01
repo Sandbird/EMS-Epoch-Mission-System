@@ -36,7 +36,6 @@ waitUntil{{isPlayer _x && _x distance baserunover < 30  } count playableunits > 
 //Mission completed
 [nil,nil,rTitleText,"Survivors have secured the construction materials.", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";

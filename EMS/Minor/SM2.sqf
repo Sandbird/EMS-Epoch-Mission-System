@@ -56,7 +56,6 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits >
 //Mission completed
 [nil,nil,rTitleText,"The Medical Outpost is under survivor control!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";

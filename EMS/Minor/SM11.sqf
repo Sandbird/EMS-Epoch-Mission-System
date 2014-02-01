@@ -61,7 +61,6 @@ sleep 1;
 //Mission completed
 [nil,nil,rTitleText,"Wrecked HMMWV secured by survivors!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";

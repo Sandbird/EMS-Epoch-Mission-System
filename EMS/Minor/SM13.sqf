@@ -23,7 +23,6 @@ waitUntil{({alive _x} count (units AxeMurderer)) < 1};
 //Mission completed
 [nil,nil,rTitleText,"Finally! He died! Check the body for medical supplies!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";

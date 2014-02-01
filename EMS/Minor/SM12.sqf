@@ -61,7 +61,6 @@ sleep 1;
 //Mission completed
 [nil,nil,rTitleText,"Crashed Truck secured by survivors!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";

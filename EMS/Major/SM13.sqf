@@ -33,7 +33,6 @@ waitUntil{{isPlayer _x && _x distance _crate < 30  } count playableunits > 0};
 //Mission completed
 [nil,nil,rTitleText,"Survivors have eliminated the bandit construction team.", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";

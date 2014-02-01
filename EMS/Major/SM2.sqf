@@ -47,7 +47,6 @@ waitUntil{{isPlayer _x && _x distance _c130wreck < 60  } count playableunits > 0
 //Mission completed
 [nil,nil,rTitleText,"The C130 crash site has been secured by survivors!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";

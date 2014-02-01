@@ -33,7 +33,6 @@ waitUntil{{isPlayer _x && _x distance _chopcrash < 30  } count playableunits > 0
 //Mission completed
 [nil,nil,rTitleText,"Wrecked Chopper has been secured by survivors!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";

@@ -45,7 +45,6 @@ waitUntil{{isPlayer _x && _x distance _baserunover < 30  } count playableunits >
 //Mission completed
 [nil,nil,rTitleText,"Survivors have taken control of the camp and medical supplies.", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers.sqf";
 MissionGo = 0;
 Ccoords = 0;
 publicVariable "Ccoords";

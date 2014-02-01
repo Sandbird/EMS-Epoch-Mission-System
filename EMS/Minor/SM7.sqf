@@ -23,7 +23,6 @@ waitUntil{({alive _x} count (units SniperTeam)) < 1};
 //Mission completed
 [nil,nil,rTitleText,"Snipers killed by survivors! Now loot the corpses!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 MCoords = 0;
 publicVariable "MCoords";

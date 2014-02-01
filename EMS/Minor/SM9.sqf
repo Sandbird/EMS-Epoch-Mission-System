@@ -62,7 +62,6 @@ waitUntil{{isPlayer _x && _x distance baserunover < 30  } count playableunits > 
 //Mission completed
 [nil,nil,rTitleText,"Survivors killed all Hillies! Loot their corpses!", "PLAIN",6] call RE;
 
-[] execVM "debug\remmarkers75.sqf";
 MissionGoMinor = 0;
 publicVariable "MissionGoMinor";
 MCoords = 0;
